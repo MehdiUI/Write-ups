@@ -1,8 +1,8 @@
 # Defensive Security Intro — TryHackMe
 
 **Catégorie :** Blue Team  
-**Niveau :** Facile  
-**Date :** [JJ/MM/AAAA]  
+**Date de sortie :** 2025  
+**Date de complétion :** 20/10/2026  
 **Lien :** https://tryhackme.com/room/defensivesecurityintroqW  
 **Room précédente :** [SOC Role in Blue Team](./soc-role-in-blue-team.md)  
 **Room suivante :** [Introduction to SIEM](./introduction-to-siem.md)
