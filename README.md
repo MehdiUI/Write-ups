@@ -1,2 +1,1 @@
-# Write-ups
-Write-ups TryHackMe &amp; LetsDefend d'un profil en reconversion vers la cybersécurité défensive. Objectif : Analyste SOC junior. Notes d'analyse, triage d'alertes, SIEM, logs et réponse à incident — documentés room par room.
+Carnet de bord de ma préparation au poste d'Analyste SOC junior. Objectif : documenter ma progression sur TryHackMe et LetsDefend, et prouver ma capacité à analyser, qualifier et rédiger — les trois compétences clés d'un analyste SOC.
