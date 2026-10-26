@@ -28,25 +28,18 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 
 | Module | Room | Complété le | Write-up | Statut |
 |---|---|---|---|---|
+| Start Your Cyber Security Journey | SOC Role in Blue Team | 19/10/2026 | [Lire](./cyber-security-101/soc-role-in-blue-team.md) | ✅ Terminé |
 | Start Your Cyber Security Journey | Defensive Security Intro | 20/10/2026 | [Lire](./cyber-security-101/defensive-security-intro.md) | ✅ Terminé |
+| Start Your Cyber Security Journey | Introduction to SIEM | 21/10/2026 | [Lire](./cyber-security-101/introduction-to-siem.md) | ✅ Terminé |
 | Linux Fundamentals | Linux Fundamentals Part 1 | 25/10/2026 | [Lire](./cyber-security-101/linux-fundamentals-part-1.md) | ✅ Terminé |
 | Linux Fundamentals | Linux Fundamentals Part 2 | 25/10/2026 | [Lire](./cyber-security-101/linux-fundamentals-part-2.md) | ✅ Terminé |
 | Linux Fundamentals | Linux Fundamentals Part 3 | 25/10/2026 | [Lire](./cyber-security-101/linux-fundamentals-part-3.md) | ✅ Terminé |
+| EDR | Introduction to EDR | En cours | [Lire](./cyber-security-101/introduction-to-edr.md) | 🚧 En cours |
 | Windows and AD Fundamentals | Windows Fundamentals 1 | — | — | ⏳ À venir |
 | Command Line | Command Line | — | — | ⏳ À venir |
 | Networking | Networking | — | — | ⏳ À venir |
 | Defensive Security | SOC Fundamentals | — | — | ⏳ À venir |
 | Security Solutions | SIEM | — | — | ⏳ À venir |
-
-### Rooms hors parcours (TryHackMe)
-
-| Room | Catégorie | Complété le | Write-up | Statut |
-|---|---|---|---|---|
-| SOC Role in Blue Team | Blue Team | 19/10/2026 | [Lire](./tryhackme/soc-role-in-blue-team.md) | ✅ Terminé |
-| Introduction to SIEM | SIEM | 21/10/2026 | [Lire](./tryhackme/introduction-to-siem.md) | ✅ Terminé |
-| Introduction to EDR | EDR | En cours | [Lire](./tryhackme/introduction-to-edr.md) | 🚧 En cours |
-| SOC Analyst Basics | SOC | — | — | ⏳ À venir |
-| SOC Alert Triage | SOC | — | — | ⏳ À venir |
 
 ### LetsDefend
 
