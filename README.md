@@ -4,7 +4,7 @@ Carnet de bord de ma préparation au poste d'**Analyste SOC junior**.
 
 > Profil en reconversion vers la cybersécurité défensive. 2 ans d'expérience en maintenance et sécurisation de sites web en production. Objectif : intégrer un SOC en alternance ou en poste junior.
 
-> **Dernière mise à jour : 26/10/2026 — 9 rooms complétées, 1 en cours. Membre Premium TryHackMe.**
+> **Dernière mise à jour : 26/10/2026 — 10 rooms complétées, 1 en cours. Membre Premium TryHackMe.**
 
 ---
 
@@ -36,8 +36,8 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 | Linux Fundamentals | Linux Fundamentals Part 3 | 25/10/2026 | [Lire](./TryHackMe/Cyber-security-101/linux-fundamentals-part-3.md) | ✅ Terminé |
 | Windows and AD Fundamentals | Windows Fundamentals Part 1 | 26/10/2026 | [Lire](./TryHackMe/Cyber-security-101/windows-fundamentals-part-1.md) | ✅ Terminé |
 | Windows and AD Fundamentals | Windows Fundamentals Part 2 | 26/10/2026 | [Lire](./TryHackMe/Cyber-security-101/windows-fundamentals-part-2.md) | ✅ Terminé |
+| Windows and AD Fundamentals | Windows Fundamentals Part 3 | 26/10/2026 | [Lire](./TryHackMe/Cyber-security-101/windows-fundamentals-part-3.md) | ✅ Terminé |
 | EDR | Introduction to EDR | En cours | [Lire](./TryHackMe/Cyber-security-101/introduction-to-edr.md) | 🚧 En cours |
-| Windows and AD Fundamentals | Windows Fundamentals Part 3 | — | — | ⏳ À venir |
 | Command Line | Command Line | — | — | ⏳ À venir |
 | Networking | Networking | — | — | ⏳ À venir |
 | Defensive Security | SOC Fundamentals | — | — | ⏳ À venir |
@@ -62,7 +62,7 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 
 ## 🛠️ Stack technique
 
-**Systèmes** : Windows (NTFS, UAC, Event Viewer, Registre), Linux (ligne de commande, droits, permissions, processus, services, logs, cron)
+**Systèmes** : Windows (NTFS, UAC, Event Viewer, Registre, Defender, BitLocker), Linux (ligne de commande, droits, permissions, processus, services, logs, cron)
 **Réseau** : TCP/IP, DNS, HTTP, SMTP, modèle OSI, Wireshark
 **Scripting** : Python (notions), JavaScript, PHP
 **Sécurité défensive** : SIEM, triage d'alertes, IOC, MITRE ATT&CK (notions), Sigma (notions)
