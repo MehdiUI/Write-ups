@@ -1,7 +1,7 @@
 # Network Fundamentals — LetsDefend
 
 **Catégorie :** Réseau  
-**Date de sortie :** 2024
+**Date de sortie :** 2024  
 **Date de complétion :** 25/10/2026  
 **Lien :** https://app.letsdefend.io/training/lessons/network-fundamentals
 
@@ -9,80 +9,59 @@
 
 ## 🎯 Objectif de la room
 
-Acquérir les fondamentaux réseau nécessaires à un analyste SOC : modèle OSI, TCP/IP, protocoles courants et analyse de trafic.
+Acquérir les fondamentaux réseau nécessaires à un analyste SOC : types de réseaux, topologies, modèle OSI, équipements, adressage IP et NAT.
 
 ---
 
 ## 🧠 Ce que j'ai appris
 
-### Le modèle OSI (7 couches)
+### Les types de réseaux
 
-| Couche | Nom | Rôle |
-|---|---|---|
-| 7 | Application | Interface utilisateur (HTTP, DNS, SMTP) |
-| 6 | Présentation | Chiffrement, encodage |
-| 5 | Session | Gestion des sessions |
-| 4 | Transport | TCP, UDP |
-| 3 | Réseau | IP, routage |
-| 2 | Liaison | MAC, Ethernet |
-| 1 | Physique | Câbles, signaux |
+Les réseaux sont classés selon leur taille géographique[reference:25] :
+- **PAN** (Personal Area Network) : très petite portée (ex : Bluetooth).
+- **LAN** (Local Area Network) : réseau local (maison, bureau).
+- **MAN** (Metropolitan Area Network) : échelle d'une ville.
+- **WAN** (Wide Area Network) : très grande échelle (Internet).
+- **CAN** (Campus Area Network) : intermédiaire, pour un campus ou une entreprise.
 
-### Le modèle TCP/IP (4 couches)
+### Les topologies réseau
 
-| Couche | Correspondance OSI |
-|---|---|
-| Application | OSI 5-6-7 |
-| Transport | OSI 4 |
-| Internet | OSI 3 |
-| Accès réseau | OSI 1-2 |
+La topologie décrit la disposition physique ou logique des équipements[reference:26] :
+- **Bus** : tous les équipements partagent une ligne unique.
+- **Star** : tous les équipements sont connectés à un hub central.
+- **Ring** : les équipements forment une boucle.
+- **Mesh** : les équipements sont interconnectés (redondance).
+- **Tree** : hiérarchie de topologies en étoile.
+- **Point-to-Point** : connexion directe entre deux équipements.
 
-### Les protocoles clés
+### Le modèle OSI
 
-| Protocole | Rôle | Port courant |
-|---|---|---|
-| **IP** | Adressage et routage | — |
-| **TCP** | Connexion fiable (handshake SYN / SYN-ACK / ACK) | — |
-| **UDP** | Sans connexion, plus rapide | — |
-| **DNS** | Résolution de noms | 53 |
-| **HTTP** | Requêtes web | 80 |
-| **HTTPS** | Requêtes web chiffrées | 443 |
-| **SMTP** | Envoi d'emails | 25 |
-| **SSH** | Connexion distante sécurisée | 22 |
-| **RDP** | Bureau à distance | 3389 |
+Le modèle OSI décompose les communications réseau en 7 couches (Physique, Liaison, Réseau, Transport, Session, Présentation, Application)[reference:27].
 
-> 💡 **Point clé retenu** : un analyste SOC doit savoir **lire un flux réseau** et **reconnaître un protocole anormal** dans les logs.
+### Les équipements réseau
 
----
+La room présente les équipements comme le hub, le switch, le routeur, etc., et leur rôle dans le réseau.
 
-## 🛠️ Concepts manipulés
+### Le modèle TCP/IP
 
-| Concept | Rôle |
-|---|---|
-| Modèle OSI | Décomposer une communication en 7 couches |
-| Modèle TCP/IP | Modèle pratique d'Internet |
-| Handshake TCP | Vérifier la connexion entre deux hôtes |
-| DNS | Résolution de noms |
-| Ports | Identifier le service associé à un flux |
-| Adressage IP | Identifier la source et la destination |
+Le modèle TCP/IP est le modèle pratique utilisé sur Internet (4 couches : Accès réseau, Internet, Transport, Application).
 
----
+### L'adressage IP
 
-## 🔍 Ce que je retiens pour la détection
+La room couvre l'adressage IPv4 (classes, adresses privées/publiques) et IPv6.
 
-- Un **scan de ports** génère beaucoup de paquets SYN vers des ports différents : c'est détectable dans les logs firewall.
-- Un **trafic DNS anormal** (requêtes vers des domaines suspects, requêtes fréquentes vers le même domaine) peut indiquer une exfiltration ou un malware.
-- Un **trafic HTTP vers une IP inconnue** peut être un signe de beaconing (communication périodique avec un C2).
-- Connaître les **ports légitimes** permet de repérer les ports inhabituels (ex : un serveur web qui écoute sur le port 4444).
-- Le **handshake TCP** permet de distinguer une connexion légitime d'un scan.
+### Le NAT (Network Address Translation)
+
+Le NAT permet de traduire des adresses IP privées en adresses publiques pour accéder à Internet[reference:28].
 
 ---
 
 ## 📌 Ce que je retiens pour un poste d'analyste SOC
 
-- Comprendre le réseau est **indispensable** pour lire les logs firewall, proxy et IDS.
-- Un analyste SOC doit savoir **distinguer un trafic normal d'un trafic suspect**.
-- Les protocoles **DNS, HTTP et TCP** sont les plus fréquemment impliqués dans les incidents.
-- La connaissance des ports et des protocoles permet de **qualifier une alerte réseau** rapidement.
+- Comprendre les types de réseaux et les topologies aide à visualiser l'infrastructure.
+- Le modèle OSI et TCP/IP sont essentiels pour analyser les communications.
+- L'adressage IP et le NAT sont partout dans les logs ; savoir les interpréter est crucial.
+- Les équipements réseau (switch, routeur) sont des points de collecte de logs importants.
 
 ---
 
@@ -90,8 +69,3 @@ Acquérir les fondamentaux réseau nécessaires à un analyste SOC : modèle OSI
 
 - [x] Room terminée
 - [x] Write-up publié
-
-
----
-
-*Write-up rédigé dans le cadre de ma préparation au poste d'Analyste SOC junior.*
