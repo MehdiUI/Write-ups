@@ -4,6 +4,8 @@ Carnet de bord de ma préparation au poste d'**Analyste SOC junior**.
 
 > Profil en reconversion vers la cybersécurité défensive. 2 ans d'expérience en maintenance et sécurisation de sites web en production. Objectif : intégrer un SOC en alternance ou en poste junior.
 
+> **Dernière mise à jour : 26/10/2026 — 7 rooms complétées, 1 en cours. Membre Premium TryHackMe.**
+
 ---
 
 ## 🎯 Ma démarche
@@ -22,27 +24,35 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 
 ## 📊 Progression
 
-### TryHackMe
+### Parcours Cyber Security 101 (TryHackMe Premium)
 
-| Room | Catégorie | Write-up | Statut |
-|---|---|---|---|
-| SOC Role in Blue Team | Blue Team | [Lire](./tryhackme/soc-role-in-blue-team.md) | ✅ Terminé |
-| Defensive Security Intro | Blue Team | [Lire](./tryhackme/defensive-security-intro.md) | ✅ Terminé |
-| Introduction to SIEM | SIEM | [Lire](./tryhackme/introduction-to-siem.md) | ✅ Terminé |
-| Introduction to EDR | EDR | [Lire](./tryhackme/introduction-to-edr.md) | 🚧 En cours |
-| SOC Analyst Basics | SOC | — | ⏳ À venir |
-| SOC Alert Triage | SOC | — | ⏳ À venir |
-| Intro to Logs | Logs | — | ⏳ À venir |
-| Windows Logging for SOC | Windows | — | ⏳ À venir |
-| Linux Logging for SOC | Linux | — | ⏳ À venir |
-| Splunk 101 | Splunk | — | ⏳ À venir |
-| Wazuh | Wazuh | — | ⏳ À venir |
+| Module | Room | Complété le | Write-up | Statut |
+|---|---|---|---|---|
+| Start Your Cyber Security Journey | Defensive Security Intro | 20/10/2026 | [Lire](./cyber-security-101/defensive-security-intro.md) | ✅ Terminé |
+| Linux Fundamentals | Linux Fundamentals Part 1 | 25/10/2026 | [Lire](./cyber-security-101/linux-fundamentals-part-1.md) | ✅ Terminé |
+| Linux Fundamentals | Linux Fundamentals Part 2 | 25/10/2026 | [Lire](./cyber-security-101/linux-fundamentals-part-2.md) | ✅ Terminé |
+| Linux Fundamentals | Linux Fundamentals Part 3 | 25/10/2026 | [Lire](./cyber-security-101/linux-fundamentals-part-3.md) | ✅ Terminé |
+| Windows and AD Fundamentals | Windows Fundamentals 1 | — | — | ⏳ À venir |
+| Command Line | Command Line | — | — | ⏳ À venir |
+| Networking | Networking | — | — | ⏳ À venir |
+| Defensive Security | SOC Fundamentals | — | — | ⏳ À venir |
+| Security Solutions | SIEM | — | — | ⏳ À venir |
+
+### Rooms hors parcours (TryHackMe)
+
+| Room | Catégorie | Complété le | Write-up | Statut |
+|---|---|---|---|---|
+| SOC Role in Blue Team | Blue Team | 19/10/2026 | [Lire](./tryhackme/soc-role-in-blue-team.md) | ✅ Terminé |
+| Introduction to SIEM | SIEM | 21/10/2026 | [Lire](./tryhackme/introduction-to-siem.md) | ✅ Terminé |
+| Introduction to EDR | EDR | En cours | [Lire](./tryhackme/introduction-to-edr.md) | 🚧 En cours |
+| SOC Analyst Basics | SOC | — | — | ⏳ À venir |
+| SOC Alert Triage | SOC | — | — | ⏳ À venir |
 
 ### LetsDefend
 
-| Room | Catégorie | Write-up | Statut |
-|---|---|---|---|
-| Network Fundamentals | Réseau | [Lire](./letsdefend/network-fundamentals.md) | ✅ Terminé |
+| Room | Catégorie | Complété le | Write-up | Statut |
+|---|---|---|---|---|
+| Network Fundamentals | Réseau | 25/10/2026 | [Lire](./letsdefend/network-fundamentals.md) | ✅ Terminé |
 
 ---
 
@@ -51,38 +61,17 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 - **TryHackMe** : [tryhackme.com/p/Mehdisoc](https://tryhackme.com/p/Mehdisoc)
 - **LinkedIn** : [Mehdi Lemaire](https://www.linkedin.com/in/mehdi-lemaire)
 
-> 💡 Les liens de profils seront activés une fois le parcours SOC suffisamment avancé (6-8 rooms). Le dépôt GitHub reste la source principale de preuve.
+> 💡 Mon profil TryHackMe est public : il permet de vérifier directement les rooms complétées et les badges obtenus, en complément des write-ups détaillés dans ce dépôt.
 
 ---
 
 ## 🛠️ Stack technique
 
-**Systèmes** : Windows, Linux (ligne de commande, droits)
+**Systèmes** : Windows, Linux (ligne de commande, droits, permissions, processus, services, logs, cron)
 **Réseau** : TCP/IP, DNS, HTTP, SMTP, modèle OSI, Wireshark
 **Scripting** : Python (notions), JavaScript, PHP
 **Sécurité défensive** : SIEM, triage d'alertes, IOC, MITRE ATT&CK (notions), Sigma (notions)
 **Outils** : Git, Visual Studio Code, Docker (notions)
-
----
-
-## 📌 Format d'un write-up
-
-Chaque fichier suit le template suivant :
-
-```
-# Nom de la room
-**Catégorie :** ...
-**Niveau :** ...
-**Date :** ...
-**Lien :** ...
-
-## 🎯 Objectif de la room
-## 🧠 Ce que j'ai appris
-## 🛠️ Outils / concepts manipulés
-## 🔍 Démarche / investigation
-## 📌 Ce que je retiens pour un poste d'analyste SOC
-## ✅ Statut
-```
 
 ---
 
