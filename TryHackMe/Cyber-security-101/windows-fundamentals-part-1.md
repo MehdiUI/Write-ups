@@ -4,25 +4,27 @@
 **Date de sortie :** Juillet 2021  
 **Date de complétion :** 26/10/2026  
 **Lien :** https://tryhackme.com/room/windowsfundamentals1  
-**Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)  
-**Room suivante :** [Windows Fundamentals Part 2](./windows-fundamentals-part-2.md)
+**Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)
 
 ---
 
 ## 🎯 Objectif de la room
 
-Acquérir les bases de Windows pour un analyste SOC : système de fichiers, permissions, gestion des utilisateurs et des processus.
+Acquérir les bases de Windows : système de fichiers, permissions, gestion des utilisateurs et des groupes.
 
 ---
 
 ## 🧠 Ce que j'ai appris
 
+### Les versions de Windows
+
+La room présente les différentes versions de Windows (client et serveur) et leurs usages.
+
 ### Le système de fichiers
 
 - **NTFS** (New Technology File System) : le système de fichiers standard de Windows, avec gestion des permissions avancée.
 - **FAT** : ancien système de fichiers, moins sécurisé.
-- **Dossiers clés** : `C:\Windows`, `C:\Program Files`, `C:\Users`.
-- **Variables d'environnement** : `%USERPROFILE%`, `%WINDIR%`, `%TEMP%`.
+- **ADS (Alternate Data Streams)** : fonctionnalité NTFS permettant de cacher des données dans un fichier, souvent utilisée par les malwares.
 
 ### Les permissions NTFS
 
@@ -32,46 +34,16 @@ Acquérir les bases de Windows pour un analyste SOC : système de fichiers, perm
 
 ### La gestion des utilisateurs
 
-- **Comptes locaux** : créés sur la machine.
-- **Groupes** : `Administrateurs`, `Utilisateurs`, `Invités`.
+- **Comptes locaux** : créés sur la machine (Administrateur, Utilisateur standard, Invité).
 - **UAC** (User Account Control) : demande une élévation de privilèges pour les actions sensibles.
-
-### Les processus et services
-
-- **Task Manager** : surveiller les processus, l'utilisation CPU/RAM, les services.
-- **Services** : processus en arrière-plan (ex : Windows Update, Spooler).
-- **Processus** : programmes en cours d'exécution (ex : `explorer.exe`, `svchost.exe`).
-
-> 💡 **Point clé retenu** : un analyste SOC doit savoir **lire les permissions**, **repérer un compte suspect** et **identifier un processus anormal** dans le Task Manager.
-
----
-
-## 🛠️ Concepts manipulés
-
-| Concept | Rôle |
-|---|---|
-| NTFS | Système de fichiers avec permissions |
-| ACL | Contrôle d'accès aux fichiers et dossiers |
-| UAC | Élévation de privilèges |
-| Task Manager | Surveillance des processus et services |
-| Variables d'environnement | Chemins système standard |
-
----
-
-## 🔍 Ce que je retiens pour la détection
-
-- Un **processus inconnu** qui consomme beaucoup de CPU/RAM est suspect.
-- Un **compte utilisateur créé récemment** doit être vérifié.
-- Un **service activé sans justification** peut être une persistance.
-- Des **permissions excessives** (ex : `Everyone` en Contrôle total) sont une mauvaise pratique.
 
 ---
 
 ## 📌 Ce que je retiens pour un poste d'analyste SOC
 
-- Windows est **omniprésent** en entreprise.
-- Savoir **naviguer dans les dossiers système** et **lire les permissions** est indispensable.
-- Comprendre les **comptes et les processus** permet de repérer une activité suspecte.
+- Windows est omniprésent en entreprise.
+- Comprendre le système de fichiers et les permissions permet de repérer des configurations dangereuses ou des fichiers cachés (ADS).
+- La gestion des utilisateurs et l'UAC sont des mécanismes de sécurité à surveiller.
 
 ---
 
@@ -79,7 +51,3 @@ Acquérir les bases de Windows pour un analyste SOC : système de fichiers, perm
 
 - [x] Room terminée
 - [x] Write-up publié
-
----
-
-*Write-up rédigé dans le cadre de ma préparation au poste d'Analyste SOC junior.*

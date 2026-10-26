@@ -1,73 +1,52 @@
-# Defensive Security Intro — TryHackMe
+# Defensive Security Intro — Cyber Security 101 (TryHackMe)
 
 **Catégorie :** Blue Team  
 **Date de sortie :** 2025  
 **Date de complétion :** 20/10/2026  
 **Lien :** https://tryhackme.com/room/defensivesecurityintroqW  
-**Room précédente :** [SOC Role in Blue Team](./soc-role-in-blue-team.md)  
-**Room suivante :** [Introduction to SIEM](./introduction-to-siem.md)
+**Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)
 
 ---
 
 ## 🎯 Objectif de la room
 
-Découvrir les grands domaines de la sécurité défensive : SOC, DFIR, Threat Intelligence, Malware Analysis et SIEM.
+Découvrir ce qu'est la sécurité défensive (Blue Team), ses responsabilités quotidiennes et les grands domaines qui la composent.
 
 ---
 
 ## 🧠 Ce que j'ai appris
 
-### Les 5 domaines de la sécurité défensive
+### Les responsabilités de la défense
 
-| Domaine | Rôle | Lien avec le SOC |
-|---|---|---|
-| **SOC** | Supervision et réponse en temps réel | Cœur du métier |
-| **DFIR** | Investigation post-incident, collecte de preuves | Partenaire du SOC quand un incident est confirmé |
-| **Threat Intelligence** | Collecte et exploitation d'informations sur les menaces | Fournit des IOC pour enrichir la détection |
-| **Malware Analysis** | Analyse statique et dynamique d'échantillons | Analyse les échantillons remontés par le SOC |
-| **SIEM** | Centralisation et corrélation des logs | Plateforme commune à tous |
+La sécurité défensive ne se limite pas à la détection. Elle inclut également[reference:6] :
+- **La sensibilisation des utilisateurs** : former le personnel aux bonnes pratiques.
+- **La gestion des actifs** : savoir quels systèmes et appareils doivent être protégés.
+- **La mise à jour et le patch management** : corriger les vulnérabilités.
+- **Le déploiement de dispositifs préventifs** : firewalls, IPS.
+- **La journalisation et la supervision** : collecter les logs pour détecter les activités malveillantes.
 
-### Les notions clés de chaque domaine
+### Les domaines de la sécurité défensive
 
-- **SOC** : supervision continue, alertes, triage, réponse.
-- **DFIR** : collecte de preuves, reconstruction d'attaque, chronologie, rapport.
-- **Threat Intelligence** : IOC (Indicators of Compromise), TTP (Tactics, Techniques, Procedures), acteurs de la menace.
-- **Malware Analysis** : analyse statique (sans exécution) et dynamique (en sandbox).
-- **SIEM** : collecte, normalisation, corrélation, alertes.
+- **SOC (Security Operations Center)** : équipe qui surveille le réseau et les systèmes pour détecter les événements malveillants[reference:7].
+- **Threat Intelligence** : collecte d'informations sur les menaces pour mieux se préparer[reference:8].
+- **DFIR (Digital Forensics and Incident Response)** : investigation numérique et réponse aux incidents[reference:9].
+- **Malware Analysis** : analyse des programmes malveillants, soit de manière statique (sans exécution), soit dynamique (dans un environnement contrôlé)[reference:10].
 
-> 💡 **Point clé retenu** : la sécurité défensive n'est pas un seul métier, c'est un **écosystème de spécialités** qui collaborent autour du SOC.
+### Exercice pratique
 
----
-
-## 🛠️ Concepts manipulés
-
-| Domaine | Rôle |
-|---|---|
-| SOC | Supervision et réponse en temps réel |
-| DFIR | Investigation post-incident |
-| Threat Intelligence | Connaissance des menaces |
-| Malware Analysis | Analyse des échantillons malveillants |
-| SIEM | Corrélation des logs et alertes |
-
----
-
-## 🔍 Le lien entre ces domaines
-
-J'ai retenu le scénario suivant, qui illustre comment les 5 domaines collaborent :
-
-1. Le **SOC** détecte une alerte (ex : connexion suspecte).
-2. Le **SIEM** fournit les logs corrélés.
-3. La **Threat Intelligence** enrichit l'alerte avec des IOC connus (IP malveillante, hash).
-4. Si l'incident est confirmé, le **DFIR** intervient pour l'investigation.
-5. Si un malware est identifié, le **Malware Analysis** l'analyse.
+La room se termine par un exercice pratique où l'on doit :
+- Détecter une attaque (via un dashboard de supervision).
+- Stopper l'attaque (verrouiller un compte).
+- Investiguer l'attaquant.
+- Rédiger un rapport d'incident.
 
 ---
 
 ## 📌 Ce que je retiens pour un poste d'analyste SOC
 
-- Un analyste SOC est au **carrefour de plusieurs spécialités** : il doit connaître leur rôle et savoir quand escalader.
-- La Threat Intelligence et le DFIR sont des **partenaires naturels** du SOC.
-- Comprendre l'écosystème permet de mieux **qualifier une alerte** et de **l'orienter** vers le bon interlocuteur.
+- La défense est un travail d'équipe qui implique autant la prévention (patching, sensibilisation) que la détection (SOC) et la réaction (DFIR).
+- Le SOC est au cœur de l'opérationnel, mais il s'appuie sur le Threat Intelligence et le DFIR.
+- Savoir rédiger un rapport d'incident est une compétence clé, même pour un débutant.
 
 ---
 
@@ -75,7 +54,3 @@ J'ai retenu le scénario suivant, qui illustre comment les 5 domaines collaboren
 
 - [x] Room terminée
 - [x] Write-up publié
-
----
-
-*Write-up rédigé dans le cadre de ma préparation au poste d'Analyste SOC junior.*

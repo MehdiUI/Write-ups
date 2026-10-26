@@ -4,15 +4,13 @@
 **Date de sortie :** Juillet 2021  
 **Date de complétion :** 26/10/2026  
 **Lien :** https://tryhackme.com/room/windowsfundamentals2  
-**Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)  
-**Room précédente :** [Windows Fundamentals Part 1](./windows-fundamentals-part-1.md)  
-**Room suivante :** Windows Fundamentals Part 3
+**Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)
 
 ---
 
 ## 🎯 Objectif de la room
 
-Approfondir les outils d'administration Windows essentiels à un analyste SOC : gestion des systèmes, registre, journaux d'événements et partages réseau.
+Découvrir les principaux outils d'administration système de Windows, comment les lancer (via MSConfig, le menu Démarrer ou des commandes) et à quoi ils servent.
 
 ---
 
@@ -20,65 +18,29 @@ Approfondir les outils d'administration Windows essentiels à un analyste SOC : 
 
 ### System Configuration (MSConfig)
 
-- **Onglet Général** : options de démarrage (Normal, Diagnostic, Sélectif).
-- **Onglet Démarrage** : gérer les programmes au démarrage.
-- **Onglet Services** : voir et désactiver les services.
+L'outil `msconfig` permet de gérer le démarrage de Windows, les services et de lancer d'autres outils système.
 
-### Advanced System Settings
+### Les outils accessibles depuis MSConfig et le menu Démarrer
 
-- **Performance** : options d'effets visuels, mémoire virtuelle.
-- **Variables d'environnement** : chemins système.
-- **Démarrage et récupération** : options de dépannage.
+La room explique que l'on n'est pas obligé de passer par MSConfig pour lancer ces outils : ils peuvent être exécutés directement via le menu Démarrer ou des commandes.
 
-### Computer Management
-
-- **Event Viewer** : consulter les journaux d'événements (Security, System, Application).
-- **Shared Folders** : voir les dossiers partagés sur le réseau.
-- **Local Users and Groups** : gérer les comptes locaux.
-- **Performance** : surveiller les ressources.
-- **Device Manager** : gérer le matériel.
-- **Disk Management** : gérer les disques et partitions.
-- **Services** : gérer les services Windows.
-
-### Le Registre (Registry Editor)
-
-- **Structure** : `HKEY_LOCAL_MACHINE`, `HKEY_CURRENT_USER`, `HKEY_CLASSES_ROOT`, `HKEY_USERS`, `HKEY_CURRENT_CONFIG`.
-- **Clé `Run`** : `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run` (persistance fréquente).
-- **Clé `RunOnce`** : exécution unique au démarrage.
-
-> 💡 **Point clé retenu** : l'**Event Viewer** et le **Registre** sont les deux sources d'information les plus importantes pour un analyste SOC sur Windows.
-
----
-
-## 🛠️ Outils et concepts manipulés
-
-| Outil / Concept | Rôle |
-|---|---|
-| MSConfig | Gérer le démarrage et les services |
-| Event Viewer | Consulter les journaux d'événements |
-| Local Users and Groups | Gérer les comptes locaux |
-| Services | Gérer les services Windows |
-| Registry Editor | Modifier la base de registre |
-| Clé Run | Point de persistance fréquent |
-
----
-
-## 🔍 Ce que je retiens pour la détection
-
-- Une **clé `Run` modifiée** dans le registre est une technique de persistance classique.
-- Un **EventID 4625** (échec de connexion) répété dans l'Event Viewer indique un brute force.
-- Un **EventID 4688** (création de processus) avec un processus suspect (ex : `powershell.exe` lancé par un utilisateur non admin) est à investiguer.
-- Un **dossier partagé (Shared Folder)** non justifié peut être une fuite de données.
-- Un **service activé récemment** peut être une persistance.
+- **UAC Settings** (`UserAccountControlSettings.exe`) : gérer les niveaux de sécurité de l'UAC.
+- **Resource Monitor** (`resmon`) : surveiller l'utilisation du CPU, de la RAM, du disque et du réseau.
+- **Command Prompt** (`cmd`) : l'invite de commande Windows.
+- **Registry Editor** (`regedit`) : l'éditeur de base de registre.
+- **Task Manager** (`taskmgr`) : gérer les processus, les performances et les utilisateurs.
+- **System Information** (`msinfo32`) : afficher les détails matériels et logiciels du système.
+- **Local Users and Groups** (`lusrmgr.msc`) : gérer les comptes locaux et les groupes (non disponible sur les éditions Home).
+- **Windows Defender Firewall with Advanced Security** (`wf.msc`) : gérer les règles de pare-feu.
+- **Performance Monitor** (`perfmon`) : surveiller les performances système en détail.
 
 ---
 
 ## 📌 Ce que je retiens pour un poste d'analyste SOC
 
-- L'**Event Viewer** est la première chose à consulter en cas d'incident sur Windows.
-- Le **Registre** est une cible privilégiée des attaquants pour la persistance.
-- Les **comptes locaux et les services** doivent être surveillés.
-- Cette room prépare la **Part 3** (mises à jour, sécurité, Active Directory).
+- Connaître ces outils est indispensable pour diagnostiquer et investiguer sur une machine Windows.
+- Savoir lancer ces outils rapidement (via `cmd` ou `Win + R`) est un réflexe à acquérir.
+- Le **Registre** et le **Gestionnaire des tâches** sont fréquemment utilisés pour vérifier une activité suspecte.
 
 ---
 
@@ -86,8 +48,3 @@ Approfondir les outils d'administration Windows essentiels à un analyste SOC : 
 
 - [x] Room terminée
 - [x] Write-up publié
-
-
----
-
-*Write-up rédigé dans le cadre de ma préparation au poste d'Analyste SOC junior.*

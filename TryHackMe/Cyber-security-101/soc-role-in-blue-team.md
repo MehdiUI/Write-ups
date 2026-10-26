@@ -1,75 +1,48 @@
-# SOC Role in Blue Team — TryHackMe
+# SOC Role in Blue Team — Cyber Security 101 (TryHackMe)
 
 **Catégorie :** Blue Team  
 **Date de sortie :** 2025  
-**Date de complétion :** 19/10/2026   
+**Date de complétion :** 19/10/2026  
 **Lien :** https://tryhackme.com/room/socroleinblueteam  
-**Room suivante :** [Defensive Security Intro](./defensive-security-intro.md)
+**Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)
 
 ---
 
 ## 🎯 Objectif de la room
 
-Comprendre le rôle et les responsabilités d'un analyste SOC au sein d'une équipe Blue Team, ainsi que son positionnement dans la chaîne de défense d'une organisation.
+Comprendre où se situe l'équipe SOC dans la structure d'une entreprise, quels sont les différents rôles au sein de la Blue Team et comment évoluer dans une carrière d'analyste SOC.
 
 ---
 
 ## 🧠 Ce que j'ai appris
 
-### Le SOC, c'est quoi ?
+### La hiérarchie de sécurité
 
-Le **Security Operations Center** est le centre de supervision qui détecte, analyse et répond aux incidents de sécurité en temps réel. C'est le premier rempart d'une organisation face aux menaces.
+- **Le CISO** (Chief Information Security Officer) est le rôle de direction qui prend les décisions clés en matière de cybersécurité[reference:1].
+- Sous la direction du CISO, différentes équipes se partagent les tâches :
+  - **Red Team** : experts en sécurité offensive (pentesters, ethical hackers)[reference:2].
+  - **GRC Team** : spécialistes des politiques et de la conformité (ex : PCI DSS)[reference:3].
+  - **Blue Team** : experts en sécurité défensive (analystes SOC, ingénieurs, incident responders)[reference:4].
 
-### Les niveaux d'analystes
+### La Blue Team
 
-| Niveau | Rôle | Responsabilités |
-|---|---|---|
-| **L1** | Triage | Qualifier les alertes, vrai/faux positif, escalader si nécessaire |
-| **L2** | Investigation | Approfondir l'analyse, corréler les événements, proposer une remédiation |
-| **L3** | Expertise | Threat hunting, réponse avancée, amélioration des détections |
+- C'est l'équipe qui s'occupe de la défense. Elle est composée de différents niveaux :
+  - **Analyste SOC L1** : le point d'entrée, chargé du triage initial.
+  - **Analyste SOC L2** : investigation plus approfondie.
+  - **Ingénieurs SOC** : maintenance des outils (SIEM, EDR).
+  - **Incident Responders** : gestion des incidents majeurs.
 
-### Les responsabilités clés d'un L1
+### L'évolution de carrière
 
-- **Surveiller** les alertes remontées par le SIEM
-- **Qualifier** chaque alerte : vrai positif / faux positif
-- **Documenter** la décision dans un rapport d'alerte
-- **Escalader** au L2 si l'incident est confirmé
-- **Communiquer** avec les autres équipes (DFIR, Threat Intel, Malware Analysis)
-
-> 💡 **Point clé retenu** : un analyste SOC L1 est un **trieur d'alertes**. Il ne résout pas tout : il qualifie et oriente. C'est le premier maillon de la défense.
-
----
-
-## 🛠️ Outils / concepts manipulés
-
-| Outil / Concept | Rôle |
-|---|---|
-| SIEM | Centralise et corrèle les logs pour générer des alertes |
-| Alertes | Événements suspects à qualifier |
-| Triage | Priorisation et qualification des alertes |
-| Escalade | Transmission au niveau supérieur si nécessaire |
-| Rapport d'alerte | Documentation de la décision et des actions |
-
----
-
-## 🔍 Workflow de traitement d'une alerte
-
-Bien que la room soit théorique, j'ai retenu le **workflow complet** qu'un analyste L1 suit au quotidien :
-
-1. **Détection** — le SIEM génère une alerte à partir des logs.
-2. **Triage (L1)** — l'analyste vérifie si l'alerte est légitime.
-3. **Qualification** — vrai positif / faux positif, niveau de sévérité.
-4. **Escalade** — transmission au L2 si nécessaire.
-5. **Documentation** — rapport d'alerte avec décision et actions.
+La room explique comment progresser au sein d'un SOC, du niveau L1 vers des rôles plus spécialisés ou de management.
 
 ---
 
 ## 📌 Ce que je retiens pour un poste d'analyste SOC
 
-- Un analyste L1 doit savoir **qualifier une alerte rapidement** et **documenter sa décision**.
-- La rigueur du rapport d'alerte est aussi importante que la détection elle-même.
-- Le SOC est un travail d'équipe : **communication et escalade** sont des compétences clés.
-- Comprendre la hiérarchie L1/L2/L3 permet de savoir **quand escalader** et **à qui**.
+- Le SOC n'est pas une entité isolée : il fait partie d'une structure dirigée par un CISO et collabore avec la Red Team et la GRC.
+- Comprendre la hiérarchie permet de savoir à qui s'adresser et comment évoluer.
+- Le rôle de L1 est la porte d'entrée naturelle pour quelqu'un qui débute.
 
 ---
 
@@ -77,6 +50,3 @@ Bien que la room soit théorique, j'ai retenu le **workflow complet** qu'un anal
 
 - [x] Room terminée
 - [x] Write-up publié
----
-
-*Write-up rédigé dans le cadre de ma préparation au poste d'Analyste SOC junior.*
