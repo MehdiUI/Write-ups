@@ -4,7 +4,7 @@ Carnet de bord de ma préparation au poste d'**Analyste SOC junior**.
 
 > Profil en reconversion vers la cybersécurité défensive. 2 ans d'expérience en maintenance et sécurisation de sites web en production. Objectif : intégrer un SOC en alternance ou en poste junior.
 
-> **Dernière mise à jour : 27/10/2026 — 13 rooms complétées, 1 en cours. Membre Premium TryHackMe.**
+> **Dernière mise à jour : 28/10/2026 — 14 rooms complétées, 1 en cours. Membre Premium TryHackMe.**
 
 ---
 
@@ -38,8 +38,8 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 | **3. Windows and AD Fundamentals** | Active Directory Basics | 27/10/2026 | [Lire](./TryHackMe/Cyber-security-101/active-directory-basics.md) | ✅ Terminé |
 | **4. Command Line** | Windows Command Line | 27/10/2026 | [Lire](./TryHackMe/Cyber-security-101/windows-command-line.md) | ✅ Terminé |
 | **4. Command Line** | Windows PowerShell | 27/10/2026 | [Lire](./TryHackMe/Cyber-security-101/windows-powershell.md) | ✅ Terminé |
-| **4. Command Line** | Linux Shells | — | — | ⏳ À venir |
-| **5. Networking** | Networking | — | — | ⏳ À venir |
+| **4. Command Line** | Linux Shells | 28/10/2026 | [Lire](./TryHackMe/Cyber-security-101/linux-shells.md) | ✅ Terminé |
+| **5. Networking** | Networking Concepts | — | — | ⏳ À venir |
 | **10. Defensive Security** | SOC Fundamentals | — | — | ⏳ À venir |
 | **11. Security Solutions** | SIEM | — | — | ⏳ À venir |
 
@@ -65,7 +65,7 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 
 ## 🛠️ Stack technique
 
-**Systèmes** : Windows (CMD, PowerShell, NTFS, UAC, Event Viewer, Registre, Defender, Active Directory), Linux (Bash, permissions, processus, services, logs, cron).
+**Systèmes** : Windows (CMD, PowerShell, NTFS, UAC, Event Viewer, Registre, Defender, Active Directory), Linux (Bash, Zsh, permissions, processus, services, logs, cron).
 **Réseau** : TCP/IP, DNS, HTTP, SMTP, modèle OSI, Wireshark.
 **Scripting** : Python (notions), Bash, PowerShell, JavaScript, PHP.
 **Sécurité défensive** : SIEM, triage d'alertes, IOC, MITRE ATT&CK (notions), Sigma (notions).
