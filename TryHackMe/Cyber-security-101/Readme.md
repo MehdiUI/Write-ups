@@ -24,4 +24,4 @@ Ce parcours est conçu pour fournir les bases théoriques et pratiques indispens
 | 14 | **OWASP Top 10 (2025)** | Exploration et exploitation des 10 risques majeurs de sécurité web. | ⏳ À venir | — |
 
 ## 🎯 Objectif final
-Terminer ce parcours pour consolider mes bases techniques, obtenir le certificat de complétion et préparer la certification **SEC1 Professional Certification** de TryHackMe.
+Terminer ce parcours pour consolider mes bases techniques et poursuivre sur le parcours SOC L1

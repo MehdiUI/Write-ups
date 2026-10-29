@@ -4,7 +4,7 @@ Carnet de bord de ma préparation au poste d'**Analyste SOC junior**.
 
 > Profil en reconversion vers la cybersécurité défensive. 2 ans d'expérience en maintenance et sécurisation de sites web en production. Objectif : intégrer un SOC en alternance ou en poste junior.
 
-> **Membre Premium TryHackMe.**
+> **Membre Premium TryHackMe. Dernière mise à jour : 29/10/2026.**
 
 ---
 
@@ -21,7 +21,7 @@ Chaque write-up suit la même structure : Objectif de la room, Ce que j'ai appri
 | **2. Linux Fundamentals** | 3/3 ✅ | [Voir le module](./TryHackMe/Cyber-security-101/Linux_Fundamentals/README.md) |
 | **3. Windows and AD Fundamentals** | 4/4 ✅ | [Voir le module](./TryHackMe/Cyber-security-101/Windows_and_AD_Fundamentals/README.md) |
 | **4. Command Line** | 3/3 ✅ | [Voir le module](./TryHackMe/Cyber-security-101/Command_Line/README.md) |
-| **5. Networking** | 2/7 🚧 | [Voir le module](./TryHackMe/Cyber-security-101/Networking/README.md) |
+| **5. Networking** | 3/7 🚧 | [Voir le module](./TryHackMe/Cyber-security-101/Networking/README.md) |
 
 
 ### Rooms complémentaires (Hors parcours)
