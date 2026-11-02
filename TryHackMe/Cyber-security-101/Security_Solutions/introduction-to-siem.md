@@ -1,54 +1,35 @@
-# Introduction to SIEM — Cyber Security 101 (TryHackMe)
+# 📊 Introduction to SIEM
 
-**Catégorie :** SIEM  
-**Date de sortie :** 2023  
-**Date de complétion :** 21/10/2026  
-**Lien :** https://tryhackme.com/room/introtosiem  
-**Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)
+**Objectif de la room :** Comprendre ce qu'est un SIEM (Security Information and Event Management), comment il collecte, normalise et corrèle les logs, et comment l'utiliser pour détecter des menaces dans un environnement réseau.
 
----
+## 📝 Résumé des tâches et réponses
 
-## 🎯 Objectif de la room
+### Task 1 & 2 : Introduction et Log Sources
+- **Concept :** Le SIEM est une solution centralisée qui collecte les logs de toutes les machines (Windows, Linux, routeurs, serveurs web) pour les analyser. 
+- **Log Sources :** Windows Event Logs, Linux Syslog, Web Access Logs, etc.
+- **Question (exemple) :** Que signifie SIEM ?
+  - **Réponse :** `Security Information and Event Management`
 
-Comprendre les concepts de base d'un SIEM (Security Information and Event Management) : collecte, centralisation et corrélation des logs.
+### Task 3 : Why SIEM? (Les fonctionnalités)
+- **Concept :** Un SIEM ne fait pas que stocker, il traite les données :
+  - **Normalisation** : Convertit tous les logs dans un format standard (lisible par la machine).
+  - **Corrélation** : Relie plusieurs événements entre eux pour détecter une attaque (ex: 10 échecs de connexion suivis d'un succès = brute force).
+  - **Alerting** : Déclenche une alerte quand une règle de corrélation est satisfaite.
+  - **Dashboards** : Fournit des visualisations graphiques pour voir l'état du réseau.
 
----
+### Task 4 : Log Ingestion
+- **Concept :** Comment les logs arrivent au SIEM ?
+  - **Agent/Forwarder** : Un petit logiciel installé sur la machine qui envoie les logs (ex: Splunk Universal Forwarder).
+  - **Agentless** : La machine envoie elle-même ses logs via un protocole réseau (ex: Syslog, SNMP).
 
-## 🧠 Ce que j'ai appris
+### Task 5 : Lab (Splunk / ELK)
+- **Concept :** Mise en pratique dans une interface SIEM (souvent Splunk dans cette room). Tu dois rechercher des adresses IP suspectes, des événements de sécurité spécifiques ou des erreurs.
+- **Astuce pour le Lab :** 
+  - Utilise la barre de recherche (`Search & Reporting`).
+  - Tape `index=*` pour voir tous les logs.
+  - Cherche les termes comme `failed login`, `error`, ou l'IP de l'attaquant mentionnée dans l'énoncé.
 
-### Qu'est-ce qu'un SIEM ?
-
-Un SIEM est un outil qui collecte des données depuis diverses sources (endpoints, équipements réseau), les stocke de manière centralisée et effectue des corrélations[reference:12].
-
-### La visibilité réseau
-
-Pour qu'un SIEM soit efficace, il faut avoir une bonne visibilité sur ce qui se passe dans le réseau. Les sources de logs se divisent en deux catégories[reference:13] :
-- **Host-Centric (centré sur l'hôte)** : événements internes à une machine (ex : accès à un fichier, exécution de processus, logs Windows Event, Sysmon, Osquery).
-- **Network-Centric (centré sur le réseau)** : événements liés aux communications (ex : connexions SSH, VPN, trafic HTTP/FTP).
-
-### L'ingestion des logs
-
-Le SIEM doit être capable d'ingérer des logs de sources très variées et de les normaliser pour pouvoir les corréler.
-
-### Pourquoi un SIEM est nécessaire
-
-Sans SIEM, il est impossible d'examiner manuellement les centaines d'événements générés chaque seconde par les différentes machines. Le SIEM permet de centraliser et d'alerter sur les comportements suspects[reference:14].
-
-### Analyse des logs et alertes
-
-La room se termine par un exercice pratique où l'on utilise un SIEM (Splunk) pour analyser des logs et répondre à des questions sur des tentatives de connexion ou des activités suspectes.
-
----
-
-## 📌 Ce que je retiens pour un poste d'analyste SOC
-
-- Un analyste SOC passe son temps à naviguer dans les logs via un SIEM (Splunk, Wazuh, ELK, etc.).
-- Il est crucial de comprendre la différence entre les logs host-centriques et network-centriques pour savoir où chercher.
-- La corrélation est ce qui transforme des logs isolés en alertes exploitables.
-
----
-
-## ✅ Statut
-
-- [x] Room terminée
-- [x] Write-up publié
+## 🧠 Ce que je retiens pour un poste d'Analyste SOC
+- **La centralisation** : Le SIEM est la "tour de contrôle". Plus besoin d'aller machine par machine, tout est au même endroit.
+- **La corrélation** : C'est la force du SIEM. Un log isolé (ex: une connexion) ne veut rien dire, mais 1000 logs similaires en 1 minute (ex: une attaque DoS) déclenchent une alerte.
+- **Les requêtes (SPL/KQL)** : Savoir écrire une requête de recherche est indispensable pour extraire la bonne information sans se noyer sous des milliers de résultats.
