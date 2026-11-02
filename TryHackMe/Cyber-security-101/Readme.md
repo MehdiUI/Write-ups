@@ -13,8 +13,8 @@ Ce parcours est conçu pour fournir les bases théoriques et pratiques indispens
 | 3 | **Windows and AD Fundamentals** | ✅ Terminé | [Voir le module](./Windows_and_AD_Fundamentals/README.md) |
 | 4 | **Command Line** | ✅ Terminé | [Voir le module](./Command_Line/README.md) |
 | 5 | **Networking** | ✅ Terminé | [Voir le module](./Networking/README.md) |
-| 10 | **Defensive Security** | 🚧 En cours | [Voir le module](./Defensive_Security/README.md) |
+| 10 | **Defensive Security** | ✅ Terminé | [Voir le module](./Defensive_Security/README.md) |
 | 11 | **Security Solutions** | ⏳ À venir | — |
 
 ## 🎯 Objectif final
-Terminer ce parcours pour consolider mes bases techniques et poursuivre sur le parcours SOC L1
+Terminer ce parcours pour consolider mes bases techniques et poursuivre sur le parcours SOC L1.
