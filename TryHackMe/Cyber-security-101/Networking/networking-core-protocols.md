@@ -6,7 +6,7 @@
 **Lien :** https://tryhackme.com/room/networkingcoreprotocols  
 **Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)  
 **Room précédente :** [Networking Essentials](./networking-essentials.md)  
-**Room suivante :** Networking Secure Protocols
+**Room suivante :** [Networking Secure Protocols](./networking-secure-protocols.md)
 
 ---
 
@@ -32,12 +32,25 @@ Découvrir les protocoles réseau fondamentaux utilisés au quotidien (Web, Emai
 - **IMAP** (Internet Message Access Protocol) : Utilisé pour **synchroniser** les e-mails sur plusieurs appareils (port **143**). Les messages restent sur le serveur.
 
 ### Le système de noms de domaine (DNS)
-- **DNS** (Domain Name System) : Traduit les noms de domaine (ex: `google.com`) en adresses IP (ex: `142.250.201.174`). Il utilise le port **53** (UDP ou TCP). 
+- **DNS** (Domain Name System) : Traduit les noms de domaine (ex: `google.com`) en adresses IP (ex: `142.250.201.174`). Il utilise le port **53** (UDP ou TCP).
 - **WHOIS** : Un protocole (et une commande) qui permet de savoir à qui appartient un nom de domaine.
 
 ### Les protocoles d'accès à distance
 - **Telnet** : Ancien protocole pour prendre le contrôle d'une machine à distance (port **23**). **Très dangereux aujourd'hui** car tout le trafic (y compris les mots de passe) circule en texte clair.
 - **SSH** (Secure Shell) : Le remplaçant sécurisé de Telnet (port **22**). Tout le trafic est chiffré.
+
+---
+
+## 🖥️ Lignes de commande utilisées
+
+Cette room est théorique, mais des exemples de commandes ont été vus pour interagir avec les protocoles :
+
+| Commande | Description |
+|---|---|
+| `telnet <ip> 80` | Se connecter à un serveur web pour envoyer une requête HTTP manuelle. |
+| `nslookup <domaine>` | Interroger un serveur DNS pour résoudre un nom de domaine. |
+| `whois <domaine>` | Obtenir les informations d'enregistrement d'un nom de domaine. |
+| `ftp <ip>` | Se connecter à un serveur FTP. |
 
 ---
 

@@ -6,7 +6,7 @@
 **Lien :** https://tryhackme.com/room/networkingconcepts  
 **Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)  
 **Room précédente :** [Linux Shells](./linux-shells.md)  
-**Room suivante :** Networking Essentials
+**Room suivante :** [Networking Essentials](./networking-essentials.md)
 
 ---
 
@@ -19,7 +19,6 @@ Comprendre les concepts fondamentaux des réseaux informatiques : le modèle OSI
 ## 🧠 Ce que j'ai appris
 
 ### Le modèle OSI (7 couches)
-
 C'est un modèle théorique qui décompose la communication réseau en 7 couches distinctes. Chaque couche a un rôle précis et communique avec la couche au-dessus et en dessous d'elle.
 - **7. Application** : Interface avec l'utilisateur (HTTP, DNS, SMTP).
 - **6. Présentation** : Chiffrement, compression, encodage.
@@ -30,7 +29,6 @@ C'est un modèle théorique qui décompose la communication réseau en 7 couches
 - **1. Physique** : Transmission des bits (câbles, signaux).
 
 ### Le modèle TCP/IP (4 couches)
-
 C'est le modèle pratique utilisé sur Internet. Il est plus simple et regroupe certaines couches du modèle OSI :
 - **Application** (regroupe OSI 5, 6, 7).
 - **Transport** (OSI 4).
@@ -38,7 +36,6 @@ C'est le modèle pratique utilisé sur Internet. Il est plus simple et regroupe 
 - **Accès Réseau** (OSI 1, 2).
 
 ### Les types de réseaux
-
 - **PAN** (Personal Area Network) : Très petite portée (ex : Bluetooth).
 - **LAN** (Local Area Network) : Réseau local (maison, bureau).
 - **WAN** (Wide Area Network) : Très grande échelle (Internet, réseaux d'entreprise).
@@ -46,11 +43,16 @@ C'est le modèle pratique utilisé sur Internet. Il est plus simple et regroupe 
 - **MAN** (Metropolitan Area Network) : Réseau à l'échelle d'une ville.
 
 ### Les équipements réseau
-
 - **Hub** : Connecte les appareils mais diffuse les données à tout le monde (obsolète et peu sécurisé).
 - **Switch** : Connecte les appareils et envoie les données uniquement au destinataire voulu (utilise les adresses MAC).
 - **Routeur** : Connecte des réseaux différents entre eux (utilise les adresses IP).
 - **Pare-feu (Firewall)** : Filtre le trafic réseau entrant et sortant selon des règles de sécurité.
+
+---
+
+## 🖥️ Lignes de commande utilisées
+
+Cette room est théorique. Aucune ligne de commande n'a été exécutée.
 
 ---
 

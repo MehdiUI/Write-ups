@@ -1,12 +1,12 @@
 # Wireshark: The Basics — Cyber Security 101 (TryHackMe)
 
-**Catégorie :** Réseau & Analyse de trafic  
+**Catégorie :** Réseau  
 **Date de sortie :** 2024  
 **Date de complétion :** 30/10/2026  
 **Lien :** https://tryhackme.com/room/wiresharkthebasics  
 **Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)  
 **Room précédente :** [Networking Secure Protocols](./networking-secure-protocols.md)  
-**Room suivante :** Tcpdump: The Basics
+**Room suivante :** [Tcpdump: The Basics](./tcpdump-the-basics.md)
 
 ---
 
@@ -19,11 +19,9 @@ Apprendre à utiliser Wireshark, l'analyseur de protocoles réseau graphique, po
 ## 🧠 Ce que j'ai appris
 
 ### Qu'est-ce que Wireshark ?
-
 Wireshark est un outil d'analyse de paquets (packet sniffer). Il permet d'intercepter le trafic réseau qui passe par une interface (Ethernet, Wi-Fi) et de le disséquer pour voir exactement ce qui se dit entre deux machines (requêtes, réponses, données).
 
 ### L'interface
-
 - **Barre de menus** : Fichier, Édition, Vue, etc.
 - **Barre d'outils** : Boutons de démarrage/arrêt de capture.
 - **Panneau de liste des paquets** : Affiche tous les paquets capturés avec leur numéro, heure, IP source/destination, protocole et informations.
@@ -31,7 +29,6 @@ Wireshark est un outil d'analyse de paquets (packet sniffer). Il permet d'interc
 - **Panneau des octets (Bytes)** : Affiche les données brutes en hexadécimal et ASCII.
 
 ### Les filtres d'affichage (Display Filters)
-
 C'est la compétence la plus importante. Wireshark capture des milliers de paquets, les filtres permettent de ne voir que ce qui nous intéresse.
 - **Filtre par IP** : `ip.addr == 10.10.10.5`
 - **Filtre par protocole** : `http`, `dns`, `tcp`, `udp`
@@ -39,12 +36,25 @@ C'est la compétence la plus importante. Wireshark capture des milliers de paque
 - **Filtre par combinaison** : `ip.addr == 10.10.10.5 and http`
 
 ### Le suivi de flux (Follow TCP Stream)
-
 Un clic droit sur un paquet > "Follow" > "TCP Stream" permet de reconstituer une conversation complète entre deux machines. C'est extrêmement utile pour lire une requête HTTP, un échange de commandes, ou même extraire un fichier téléchargé.
 
 ### L'exportation d'objets
-
 Wireshark permet d'extraire des fichiers (images, documents, exécutables) directement d'une capture réseau (File > Export Objects).
+
+---
+
+## 🖥️ Lignes de commande / Filtres utilisés
+
+Wireshark est un outil graphique, mais voici les filtres d'affichage et actions clés utilisés :
+
+| Filtre / Action | Description |
+|---|---|
+| `http` | Afficher uniquement le trafic HTTP. |
+| `ip.addr == 10.10.10.5` | Afficher le trafic lié à l'IP 10.10.10.5. |
+| `tcp.port == 80` | Afficher le trafic sur le port 80. |
+| `ip.addr == 10.10.10.5 and http` | Combiner plusieurs filtres. |
+| `Follow > TCP Stream` | Reconstituer une conversation TCP. |
+| `File > Export Objects > HTTP` | Extraire des fichiers téléchargés via HTTP. |
 
 ---
 

@@ -4,7 +4,9 @@
 **Date de sortie :** Juillet 2021  
 **Date de complétion :** 26/10/2026  
 **Lien :** https://tryhackme.com/room/windowsfundamentals2  
-**Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)
+**Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)  
+**Room précédente :** [Windows Fundamentals Part 1](./windows-fundamentals-part-1.md)  
+**Room suivante :** [Windows Fundamentals Part 3](./windows-fundamentals-part-3.md)
 
 ---
 
@@ -17,11 +19,9 @@ Découvrir les principaux outils d'administration système de Windows, comment l
 ## 🧠 Ce que j'ai appris
 
 ### System Configuration (MSConfig)
-
 L'outil `msconfig` permet de gérer le démarrage de Windows, les services et de lancer d'autres outils système.
 
 ### Les outils accessibles depuis MSConfig et le menu Démarrer
-
 La room explique que l'on n'est pas obligé de passer par MSConfig pour lancer ces outils : ils peuvent être exécutés directement via le menu Démarrer ou des commandes.
 
 - **UAC Settings** (`UserAccountControlSettings.exe`) : gérer les niveaux de sécurité de l'UAC.
@@ -36,11 +36,30 @@ La room explique que l'on n'est pas obligé de passer par MSConfig pour lancer c
 
 ---
 
+## 🖥️ Lignes de commande utilisées
+
+Les outils ont été lancés via la boîte de dialogue **Exécuter** (`Win + R`), le menu Démarrer ou `cmd`.
+
+| Commande / Exécutable | Description |
+|---|---|
+| `msconfig` | Ouvrir System Configuration. |
+| `UserAccountControlSettings.exe` | Ouvrir les paramètres UAC. |
+| `resmon` | Ouvrir Resource Monitor. |
+| `cmd` | Ouvrir l’invite de commandes. |
+| `regedit` | Ouvrir l’éditeur du registre. |
+| `taskmgr` | Ouvrir le Gestionnaire des tâches. |
+| `msinfo32` | Ouvrir System Information. |
+| `lusrmgr.msc` | Ouvrir Local Users and Groups. |
+| `wf.msc` | Ouvrir Pare-feu Windows Defender avec fonctions avancées. |
+| `perfmon` | Ouvrir Performance Monitor. |
+
+---
+
 ## 📌 Ce que je retiens pour un poste d'analyste SOC
 
-- Connaître ces outils est indispensable pour diagnostiquer et investiguer sur une machine Windows.
-- Savoir lancer ces outils rapidement (via `cmd` ou `Win + R`) est un réflexe à acquérir.
-- Le **Registre** et le **Gestionnaire des tâches** sont fréquemment utilisés pour vérifier une activité suspecte.
+- **Connaître ces outils** est indispensable pour diagnostiquer et investiguer sur une machine Windows.
+- **Savoir lancer ces outils rapidement** (`Win + R`, `cmd`) est un réflexe à acquérir.
+- **Le Registre et le Gestionnaire des tâches** sont fréquemment utilisés pour vérifier une activité suspecte.
 
 ---
 
@@ -48,3 +67,7 @@ La room explique que l'on n'est pas obligé de passer par MSConfig pour lancer c
 
 - [x] Room terminée
 - [x] Write-up publié
+
+---
+
+*Write-up rédigé dans le cadre de ma préparation au poste d'Analyste SOC junior.*

@@ -1,35 +1,59 @@
-# 📊 Introduction to SIEM
+# Introduction to SIEM — Cyber Security 101 (TryHackMe)
 
-**Objectif de la room :** Comprendre ce qu'est un SIEM (Security Information and Event Management), comment il collecte, normalise et corrèle les logs, et comment l'utiliser pour détecter des menaces dans un environnement réseau.
+**Catégorie :** Security Solutions  
+**Date de sortie :** 2024  
+**Date de complétion :** 02/11/2026  
+**Lien :** https://tryhackme.com/room/introductiontosiem  
+**Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)  
+**Room précédente :** [Firewall Fundamentals](./firewall-fundamentals.md)  
+**Room suivante :** [IDS Fundamentals](./ids-fundamentals.md)
 
-## 📝 Résumé des tâches et réponses
+---
 
-### Task 1 & 2 : Introduction et Log Sources
-- **Concept :** Le SIEM est une solution centralisée qui collecte les logs de toutes les machines (Windows, Linux, routeurs, serveurs web) pour les analyser. 
-- **Log Sources :** Windows Event Logs, Linux Syslog, Web Access Logs, etc.
-- **Question (exemple) :** Que signifie SIEM ?
-  - **Réponse :** `Security Information and Event Management`
+## 🎯 Objectif de la room
 
-### Task 3 : Why SIEM? (Les fonctionnalités)
-- **Concept :** Un SIEM ne fait pas que stocker, il traite les données :
-  - **Normalisation** : Convertit tous les logs dans un format standard (lisible par la machine).
-  - **Corrélation** : Relie plusieurs événements entre eux pour détecter une attaque (ex: 10 échecs de connexion suivis d'un succès = brute force).
-  - **Alerting** : Déclenche une alerte quand une règle de corrélation est satisfaite.
-  - **Dashboards** : Fournit des visualisations graphiques pour voir l'état du réseau.
+Comprendre comment centraliser, normaliser et corréler les logs pour détecter des menaces.
 
-### Task 4 : Log Ingestion
-- **Concept :** Comment les logs arrivent au SIEM ?
-  - **Agent/Forwarder** : Un petit logiciel installé sur la machine qui envoie les logs (ex: Splunk Universal Forwarder).
-  - **Agentless** : La machine envoie elle-même ses logs via un protocole réseau (ex: Syslog, SNMP).
+---
 
-### Task 5 : Lab (Splunk / ELK)
-- **Concept :** Mise en pratique dans une interface SIEM (souvent Splunk dans cette room). Tu dois rechercher des adresses IP suspectes, des événements de sécurité spécifiques ou des erreurs.
-- **Astuce pour le Lab :** 
-  - Utilise la barre de recherche (`Search & Reporting`).
-  - Tape `index=*` pour voir tous les logs.
-  - Cherche les termes comme `failed login`, `error`, ou l'IP de l'attaquant mentionnée dans l'énoncé.
+## 🧠 Ce que j'ai appris
 
-## 🧠 Ce que je retiens pour un poste d'Analyste SOC
-- **La centralisation** : Le SIEM est la "tour de contrôle". Plus besoin d'aller machine par machine, tout est au même endroit.
-- **La corrélation** : C'est la force du SIEM. Un log isolé (ex: une connexion) ne veut rien dire, mais 1000 logs similaires en 1 minute (ex: une attaque DoS) déclenchent une alerte.
-- **Les requêtes (SPL/KQL)** : Savoir écrire une requête de recherche est indispensable pour extraire la bonne information sans se noyer sous des milliers de résultats.
+### Le rôle du SIEM
+Le SIEM est le cerveau du SOC. Il collecte les logs de partout (Windows, Linux, routeurs). Mais il ne fait pas que stocker : il **normalise** (traduit tous les formats), **corrèle** (relie des événements isolés pour créer une alerte) et affiche des dashboards. C'est ce qui permet de repérer une attaque complexe.
+
+### L'architecture
+J'ai découvert l'architecture d'un SIEM (agents vs sans agent). J'ai aussi vu comment on utilise un outil comme Splunk pour faire des recherches dans les logs.
+
+---
+
+## 🖥️ Lignes de commande utilisées
+
+L'interface principale est graphique (Splunk), mais les requêtes de recherche (SPL) sont essentielles. Voici les requêtes utilisées dans le lab :
+
+| Requête Splunk | Description |
+|---|---|
+| `index=*` | Afficher tous les logs ingérés dans l'index. |
+| `index=* | stats count by sourcetype` | Compter les événements par type de source. |
+| `index=* | search "failed login"` | Rechercher les échecs de connexion. |
+| `index=* | search "error"` | Rechercher les erreurs. |
+
+*Note : les commandes sont saisies dans la barre de recherche de Splunk, pas dans un terminal.*
+
+---
+
+## 📌 Ce que je retiens pour un poste d'analyste SOC
+
+- **La corrélation** : Un log de login échoué seul ne veut rien dire. Mais 100 logins échoués en 1 minute, c'est une attaque brute force. C'est le SIEM qui fait ce lien pour moi.
+- **La centralisation** : Je n'aurai pas à me connecter sur 50 serveurs différents. Tout est dans le SIEM, je gagne un temps fou.
+- **Garbage in, garbage out** : Si les logs envoyés au SIEM sont mauvais ou incomplets, les alertes seront mauvaises.
+
+---
+
+## ✅ Statut
+
+- [x] Room terminée
+- [x] Write-up publié
+
+---
+
+*Write-up rédigé dans le cadre de ma préparation au poste d'Analyste SOC junior.*

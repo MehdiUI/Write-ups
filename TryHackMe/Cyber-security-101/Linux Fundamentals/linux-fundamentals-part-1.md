@@ -4,7 +4,8 @@
 **Date de sortie :** Juillet 2021  
 **Date de complétion :** 25/10/2026  
 **Lien :** https://tryhackme.com/room/linuxfundamentalspart1  
-**Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)
+**Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)  
+**Room suivante :** [Linux Fundamentals Part 2](./linux-fundamentals-part-2.md)
 
 ---
 
@@ -18,7 +19,7 @@ Découvrir l'histoire de Linux, apprendre à interagir avec un terminal et maît
 
 ### Un peu d'histoire
 
-Linux est un système d'exploitation open-source dérivé d'UNIX. La première version a été publiée en 1991[reference:20]. Il existe de nombreuses distributions (Ubuntu, Debian, etc.) adaptées à différents usages (serveurs, desktop, etc.).
+Linux est un système d'exploitation open-source dérivé d'UNIX. La première version a été publiée en 1991. Il existe de nombreuses distributions (Ubuntu, Debian, etc.) adaptées à différents usages (serveurs, desktop, etc.).
 
 ### Les premières commandes
 
@@ -46,11 +47,32 @@ Linux est un système d'exploitation open-source dérivé d'UNIX. La première v
 
 ---
 
+## 🖥️ Lignes de commande utilisées
+
+Toutes les commandes ont été exécutées dans le terminal de la machine cible (via SSH ou directement).
+
+| Commande | Description |
+|---|---|
+| `echo "Hello"` | Afficher du texte dans le terminal. |
+| `whoami` | Afficher le nom de l'utilisateur courant. |
+| `ls` | Lister le contenu d'un répertoire. |
+| `ls -a` | Lister le contenu, y compris les fichiers cachés (commençant par un point). |
+| `ls -lh` | Lister avec des tailles lisibles par l'humain (Ko, Mo, Go). |
+| `cd /home/user/Documents` | Se déplacer dans un répertoire. |
+| `cat fichier.txt` | Afficher le contenu d'un fichier. |
+| `pwd` | Afficher le chemin du répertoire courant. |
+| `find /home/user -name "*.txt"` | Rechercher tous les fichiers `.txt` dans le répertoire. |
+| `grep "motif" fichier.txt` | Rechercher un motif dans un fichier. |
+| `echo "texte" > fichier.txt` | Rediriger la sortie vers un fichier (écrase). |
+| `echo "texte" >> fichier.txt` | Ajouter à la fin d'un fichier. |
+
+---
+
 ## 📌 Ce que je retiens pour un poste d'analyste SOC
 
-- Le terminal est l'outil principal pour interagir avec un serveur Linux.
-- Savoir naviguer dans l'arborescence et lire des fichiers est indispensable pour consulter des logs ou des configurations.
-- Les opérateurs shell permettent d'enchaîner des commandes et de filtrer des résultats, ce qui est très utile pour l'investigation.
+- **Le terminal est l'outil principal** pour interagir avec un serveur Linux.
+- **Naviguer et lire des fichiers** est indispensable pour consulter des logs ou des configurations.
+- **Les opérateurs shell** permettent d'enchaîner des commandes et de filtrer des résultats, ce qui est très utile pour l'investigation.
 
 ---
 
@@ -58,3 +80,7 @@ Linux est un système d'exploitation open-source dérivé d'UNIX. La première v
 
 - [x] Room terminée
 - [x] Write-up publié
+
+---
+
+*Write-up rédigé dans le cadre de ma préparation au poste d'Analyste SOC junior.*

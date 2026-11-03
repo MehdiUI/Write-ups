@@ -1,31 +1,62 @@
-# 🥷 CyberChef: The Basics
+# CyberChef: The Basics — Cyber Security 101 (TryHackMe)
 
-**Objectif de la room :** Découvrir CyberChef, l'outil web incontournable pour manipuler, décoder et analyser des données (extraction d'IOC, conversions de formats, décodages).
+**Catégorie :** Defensive Security Tooling  
+**Date de sortie :** 2024  
+**Date de complétion :** 02/11/2026  
+**Lien :** https://tryhackme.com/room/cyberchefbasics  
+**Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)  
+**Room suivante :** [CAPA: The Basics](./capa-basics.md)
 
-## 📝 Résumé des tâches et réponses
+---
 
-### Task 4 & 5 : Catégories et Pratique
-- **Concept :** CyberChef fonctionne avec un système de "Recipe" (Recette). On insère des données dans l'**Input**, on glisse des **Operations** (opérations) au milieu, et on obtient le résultat dans l'**Output**. 
-- **Extractors :** Permet d'extraire des IP, des URL ou des emails d'un gros bloc de texte.
-- **Data Format :** Encode/Décode du Base64, Base85, URL, etc.
-- **Date / Time :** Convertit les timestamps UNIX en dates lisibles.
+## 🎯 Objectif de la room
 
-- **Questions Task 5 :**
-  - **Email caché :** `hidden@cyberchef.thm`
-  - **IP finissant par .232 :** `102.23.14.232`
-  - **Domaine commençant par T :** `tryhackme.com`
-  - **Valeur binaire de 78 :** `01001110` (d'après la table ASCII)
-  - **Valeur URL encodée :** `https%3A%2F%2Ftryhackme%2Ecom%2Fr%2Fcareers`
+Savoir décoder et extraire des données (IOC) rapidement sans exécuter de code.
 
-### Task 6 : Your First Official Cook
-- **Questions Task 6 :**
-  - **IP commençant et finissant par 10 :** `10.10.1.10`
-  - **Base64 de "Nice Room!" :** `TmljZSBSb29tIQ==`
-  - **URL décodée :** `https://tryhackme.com/r/room/cyberchefbasics`
-  - **Date du timestamp 1725151258 :** `Sun 1 September 2024 02:00:58 UTC`
-  - **Base85 décodé :** `This is a test`
+---
 
-## 🧠 Ce que je retiens pour un poste d'Analyste SOC
-- **Décodage rapide** : Les attaquants utilisent souvent le Base64 ou l'URL encoding pour obfusquer leurs scripts (ex: PowerShell malveillant) ou cacher des URL de phishing. CyberChef permet de les décoder instantanément en toute sécurité (sandbox).
-- **Extraction d'IOC** : Face à un énorme fichier de log, l'opération "Extract IP/Email" permet d'isoler les indicateurs de compromission (IOC) en un clic.
-- **Conversion de temps** : Les logs utilisent souvent des timestamps UNIX. CyberChef permet de les convertir en dates lisibles pour reconstituer la chronologie d'une attaque (Timeline).
+## 🧠 Ce que j'ai appris
+
+### Le fonctionnement de CyberChef
+CyberChef est un outil web qui fonctionne avec des "Recipes" (recettes). On met une donnée en **Input**, on empile des **Operations** (décoder du Base64, extraire des IP, convertir des dates) et on lit le résultat en **Output**. C'est extrêmement puissant pour l'analyse d'IOC (Indicateurs de Compromission).
+
+### Les opérations utilisées
+- **Extract IP addresses** : Trouver des IP dans un texte.
+- **From Base64** : Décoder une chaîne.
+- **From UNIX Timestamp** : Convertir un timestamp en date lisible.
+- **URL Decode / URL Encode** : Décoder ou encoder une URL.
+
+---
+
+## 🖥️ Lignes de commande utilisées
+
+CyberChef étant un outil web (interface graphique), il n'y a pas de lignes de commande à proprement parler. Mais voici les opérations clés qui ont été manipulées via la Recipe :
+
+| Opération (Recipe) | Usage |
+|---|---|
+| `Extract IP addresses` | Extraire toutes les adresses IPv4/IPv6 d'un bloc de texte. |
+| `Extract URLs` | Extraire toutes les URL (nécessite un protocole pour éviter les faux positifs). |
+| `Extract email addresses` | Extraire toutes les adresses email du format `user@domain.com`. |
+| `From Base64` | Décoder une chaîne Base64 en texte brut. |
+| `From UNIX Timestamp` | Convertir un timestamp (ex: `1725151258`) en date lisible. |
+| `URL Decode` | Décoder les caractères URL-encodés (ex: `%3A` → `:`). |
+| `URL Encode` | Encoder une URL (ex: `:` → `%3A`). |
+
+---
+
+## 📌 Ce que je retiens pour un poste d'analyste SOC
+
+- **L'analyse d'obfuscation** : Les attaquants encodent souvent leur code (PowerShell, base64). Avec CyberChef, je peux le décoder en 2 clics sans exécuter le script.
+- **L'extraction d'IOC** : Face à un mail suspect, je peux extraire toutes les URL et les IPs pour les bloquer.
+- **Ne jamais exécuter le contenu décodé** sur sa machine. CyberChef est un outil d'analyse, pas un bac à sable.
+
+---
+
+## ✅ Statut
+
+- [x] Room terminée
+- [x] Write-up publié
+
+---
+
+*Write-up rédigé dans le cadre de ma préparation au poste d'Analyste SOC junior.*

@@ -6,9 +6,9 @@ Ce module est la porte d'entrée de la cybersécurité. Il couvre les bases de l
 
 | Room | Description | Statut | Write-up |
 |---|---|---|---|
-| **Offensive Security Intro** | Découverte du métier d'ethical hacker et premier "hack" légal. | ✅ Terminé | [Lire](./Offensive_Security_Intro.md) |
+| **Offensive Security Intro** | Découverte du métier d'ethical hacker et premier "hack" légal. | ✅ Terminé | [Lire](./offensive-security-intro.md) |
 | **Defensive Security Intro** | Immersion dans un SOC pour contrer une attaque en cours. | ✅ Terminé | [Lire](./defensive-security-intro.md) |
-| **Search Skills** | Apprentissage des outils de recherche (Shodan, VirusTotal, CVE). | ✅ Terminé | [Lire](./Search_Skills.md) |
+| **Search Skills** | Apprentissage des outils de recherche (Shodan, VirusTotal, CVE). | ✅ Terminé | [Lire](./search-skills.md) |
 
 ## 🧠 Ce que je retiens de ce module
 - La sécurité offensive cherche les failles, la défensive les protège.

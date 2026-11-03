@@ -6,7 +6,7 @@
 **Lien :** https://tryhackme.com/room/networkingessentials  
 **Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)  
 **Room précédente :** [Networking Concepts](./networking-concepts.md)  
-**Room suivante :** Networking Core Protocols
+**Room suivante :** [Networking Core Protocols](./networking-core-protocols.md)
 
 ---
 
@@ -19,24 +19,20 @@ Comprendre les mécanismes pratiques du réseau : l'adressage IP (IPv4 et IPv6),
 ## 🧠 Ce que j'ai appris
 
 ### L'adressage IPv4
-
-Une adresse IPv4 est composée de 32 bits, divisés en 4 octets (ex: `192.168.1.1`). 
+Une adresse IPv4 est composée de 32 bits, divisés en 4 octets (ex: `192.168.1.1`).
 - **Adresses privées** (non routables sur Internet) : `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`.
 - **Adresses publiques** : routables sur Internet.
 - **Masque de sous-réseau** : détermine quelle partie de l'adresse correspond au réseau et quelle partie correspond à l'hôte (ex: `255.255.255.0` ou `/24`).
 
 ### L'adressage IPv6
-
 IPv6 a été créé pour palier l'épuisement des adresses IPv4. Il utilise 128 bits (8 groupes de 4 chiffres hexadécimaux, ex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`).
 
 ### Le Subnetting (sous-réseaux)
-
 Le subnetting permet de diviser un grand réseau en plusieurs petits réseaux logiques. C'est essentiel pour :
 - La performance (réduire les domaines de broadcast).
 - La sécurité (isoler des départements, cloisonner le réseau).
 
 ### Les ports et protocoles
-
 Pour communiquer, les machines utilisent des ports. Les ports les plus importants à connaître pour un analyste SOC :
 - **Port 22** : SSH (connexion distante sécurisée)
 - **Port 53** : DNS (résolution de noms)
@@ -45,10 +41,15 @@ Pour communiquer, les machines utilisent des ports. Les ports les plus important
 - **Port 3389** : RDP (bureau à distance Windows)
 
 ### Les protocoles réseau de base
-
 - **DHCP** : Attribue automatiquement les adresses IP aux machines.
 - **ARP** (Address Resolution Protocol) : Permet de trouver l'adresse MAC (physique) associée à une adresse IP.
 - **ICMP** : Utilisé par la commande `ping` pour tester la connectivité.
+
+---
+
+## 🖥️ Lignes de commande utilisées
+
+Cette room est théorique. Aucune ligne de commande n'a été exécutée.
 
 ---
 

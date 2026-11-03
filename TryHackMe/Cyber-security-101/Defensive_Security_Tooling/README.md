@@ -1,6 +1,6 @@
 # 🛠️ Module 12 : Defensive Security Tooling
 
-Ce module est dédié aux outils pratiques utilisés quotidiennement par les analystes SOC et les experts en forensique pour analyser des fichiers, décoder des données et enquêter sur des malwares.
+Ce module se concentre sur les outils pratiques du quotidien de l'analyste : décoder, analyser et enquêter sans risque.
 
 ## 📝 Rooms du module
 
@@ -12,7 +12,7 @@ Ce module est dédié aux outils pratiques utilisés quotidiennement par les ana
 | **FlareVM** | Environnement Windows pour le reverse engineering. | ⏳ À venir | — |
 
 ## 🧠 Ce que je retiens de ce module
-- **L'analyse sans exécution** : Des outils comme CyberChef et CAPA permettent d'analyser des données et des malwares sans risquer d'infecter sa machine.
-- **Gain de temps** : Savoir utiliser ces outils permet d'automatiser des tâches d'analyse répétitives et de se concentrer sur l'investigation.
-- **Chaîne d'analyse** : Chaque outil a son rôle (CyberChef pour le décodage rapide, CAPA pour les capacités du malware, REMnux/FlareVM pour l'analyse approfondie).
-- **CAPA & MITRE ATT&CK** : CAPA mappe automatiquement les capacités d'un malware aux techniques ATT&CK, ce qui permet de comprendre la stratégie de l'attaquant et de préparer les défenses.
+- **L'analyse statique** : Des outils comme CyberChef et CAPA permettent de comprendre une menace sans l'exécuter.
+- **Le décodage** : CyberChef est le couteau suisse pour décoder les obfuscations (Base64, URL, etc.).
+- **L'analyse de malware** : CAPA automatise une partie du reverse engineering en identifiant les capacités du binaire et en les mappant à MITRE ATT&CK.
+- **La recherche** : CAPA Explorer Web permet de filtrer les résultats pour ne garder que ce qui est pertinent.

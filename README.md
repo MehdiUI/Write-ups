@@ -10,10 +10,10 @@
 
 Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthode**. Chaque write-up suit la même structure :
 - Objectif de la room
-- Ce que j'ai appris
-- Outils manipulés
-- Démarche
-- **Ce que je retiens pour un poste d'analyste SOC**
+- Ce que j'ai compris
+- Ce que j'ai manipulé
+- Ce que ça m'apporte pour un SOC
+- Points d'attention
 
 ---
 
@@ -54,9 +54,9 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 
 ## 🎯 Ce que je cherche
 
-- **Poste** : alternance ou CDI junior — Analyste SOC L1
+- **Poste** : alternance ou CDD/CDI junior — Analyste SOC
 - **Type de structure** : SOC interne, MSSP, ou éditeur
-- **Localisation** : *(à adapter)*
+- **Localisation** : *Lille/Île-de-France/Provence-Alpes-Côte d'Azur*
 
 ---
 

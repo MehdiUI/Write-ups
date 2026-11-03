@@ -6,7 +6,7 @@
 **Lien :** https://tryhackme.com/room/networkingsecureprotocols  
 **Parcours :** [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)  
 **Room précédente :** [Networking Core Protocols](./networking-core-protocols.md)  
-**Room suivante :** Wireshark: The Basics
+**Room suivante :** [Wireshark: The Basics](./wireshark-basics.md)
 
 ---
 
@@ -33,6 +33,13 @@ Pour contrer les failles des protocoles en texte clair, des versions sécurisée
 Un VPN crée un "tunnel" chiffré entre une machine et un réseau distant, permettant de traverser un réseau non sécurisé (comme Internet) de manière sécurisée.
 - **IPsec** : Souvent utilisé pour les VPN site-à-site en entreprise.
 - **WireGuard / OpenVPN** : Protocoles VPN modernes et rapides.
+
+---
+
+## 🖥️ Lignes de commande utilisées
+
+Cette room est principalement théorique. Aucune ligne de commande n'a été exécutée.  
+Les concepts ont été illustrés par des captures Wireshark et des explications sur les protocoles.
 
 ---
 

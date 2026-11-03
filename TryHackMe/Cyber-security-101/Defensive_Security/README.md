@@ -1,6 +1,6 @@
 # 🛡️ Module 10 : Defensive Security
 
-Ce module pose les bases de la sécurité défensive (Blue Team). Il est indispensable pour comprendre comment les entreprises se protègent, détectent les intrusions et répondent aux incidents.
+Ce module pose les bases de la défense (Blue Team) : comment les entreprises s'organisent, comment elles analysent les traces et comment elles réagissent aux crises.
 
 ## 📝 Rooms du module
 
@@ -12,8 +12,7 @@ Ce module pose les bases de la sécurité défensive (Blue Team). Il est indispe
 | **Logs Fundamentals** | Analyse des journaux Windows (Event Viewer) et Web (Access logs). | ✅ Terminé | [Lire](./logs-fundamentals.md) |
 
 ## 🧠 Ce que je retiens de ce module
-- **Le rôle du SOC** : C'est le centre névralgique de la défense. Son but est de détecter (Detect) et de répondre (Respond).
-- **Les 3 piliers** : Un SOC mature repose sur l'équilibre entre les **Personnes** (analystes), les **Processus** (triage, escalade) et la **Technologie** (SIEM, EDR).
-- **La forensique** : L'investigation numérique exige une rigueur absolue. La collecte des données volatiles (RAM) et l'analyse des métadonnées sont cruciales.
-- **La réponse à incident** : Le framework SANS (PICERL) est la référence. Contenir (Containment) une menace avant de l'éradiquer.
-- **L'analyse de logs** : Que ce soit via l'Event Viewer ou `grep`, les logs sont la clé pour reconstituer le puzzle d'une attaque et comprendre les actions de l'attaquant.
+- **L'organisation** : Le SOC et ses niveaux (L1, L2, L3). Le L1 trie, le L3 enquête et gère la crise.
+- **La méthode** : Les 5W (triage) et le framework PICERL (Incident Response) sont les boussoles de l'analyste.
+- **La preuve** : La forensique m'a montré qu'on ne peut pas improviser avec les preuves numériques (Chain of Custody, Write Blocker).
+- **Les traces** : Les logs (Event Viewer Windows et logs web Linux) sont les empreintes de toute attaque. Savoir filtrer est la compétence n°1.
