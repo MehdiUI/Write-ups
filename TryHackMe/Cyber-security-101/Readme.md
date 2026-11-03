@@ -16,6 +16,7 @@ Ce parcours est conçu pour fournir les bases théoriques et pratiques indispens
 | 6 | **Cryptography** | ⏳ À venir | — |
 | 10 | **Defensive Security** | ✅ Terminé | [Voir le module](./Defensive_Security/README.md) |
 | 11 | **Security Solutions** | ✅ Terminé | [Voir le module](./Security_Solutions/README.md) |
+| 12 | **Defensive Security Tooling** | 🚧 En cours | [Voir le module](./Defensive_Security_Tooling/README.md) |
 
 ## 🎯 Objectif final
 Terminer ce parcours pour consolider mes bases techniques et poursuivre sur le parcours SOC L1.
