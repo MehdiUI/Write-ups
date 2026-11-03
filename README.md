@@ -39,7 +39,7 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 | 6-9. Cryptography, Exploitation, Web Hacking, Offensive Tooling | — | ⏳ | *à venir* |
 | 10. Defensive Security | 4/4 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Defensive_Security/README.md) |
 | 11. Security Solutions | 4/4 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Security_Solutions/README.md) |
-| 12. Defensive Security Tooling | 1/4 | 🚧 | [Voir le module](./TryHackMe/Cyber-security-101/Defensive_Security_Tooling/README.md) |
+| 12. Defensive Security Tooling | 2/4 | 🚧 | [Voir le module](./TryHackMe/Cyber-security-101/Defensive_Security_Tooling/README.md) |
 
 ### Rooms complémentaires (hors parcours)
 
@@ -68,6 +68,6 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 
 **Scripting** · Python (appliqué à l'analyse de logs), Bash, PowerShell, JavaScript, PHP
 
-**Sécurité défensive** · SIEM, triage d'alertes, IOC, MITRE ATT&CK (notions), Sigma (notions), analyse de logs, forensique, Incident Response (PICERL), IDS/IPS (Snort), Firewalls, Scan de vulnérabilités (OpenVAS), CyberChef (décodage et extraction)
+**Sécurité défensive** · SIEM, triage d'alertes, IOC, MITRE ATT&CK (notions), Sigma (notions), analyse de logs, forensique, Incident Response (PICERL), IDS/IPS (Snort), Firewalls, Scan de vulnérabilités (OpenVAS), CyberChef (décodage et extraction), CAPA (analyse statique de malwares)
 
-**Outils** · Git, Visual Studio Code, Docker (notions), CyberChef
+**Outils** · Git, Visual Studio Code, Docker (notions), CyberChef, CAPA
