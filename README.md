@@ -1,6 +1,6 @@
 # 👨‍💻 Mehdi Lemaire — Analyste SOC Junior
 
-**En reconversion vers la cybersécurité défensive** · 2 ans d'expérience en maintenance et sécurisation de sites web en production · Objectif : **intégrer un SOC en alternance ou en poste junior**.
+**En reconversion vers la cybersécurité défensive** · 2 ans d'expérience en maintenance et de développement de sites web· Objectif : **intégrer un SOC en alternance ou en poste junior**.
 
 📍 Profil actif · Membre Premium TryHackMe · Dernière mise à jour : **04/11/2026**
 
