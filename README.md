@@ -2,7 +2,7 @@
 
 **En reconversion vers la cybersécurité défensive** · 2 ans d'expérience en maintenance et sécurisation de sites web en production · Objectif : **intégrer un SOC en alternance ou en poste junior**.
 
-📍 Profil actif · Membre Premium TryHackMe · Dernière mise à jour : **03/11/2026**
+📍 Profil actif · Membre Premium TryHackMe · Dernière mise à jour : **04/11/2026**
 
 ---
 
@@ -10,10 +10,10 @@
 
 Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthode**. Chaque write-up suit la même structure :
 - Objectif de la room
-- Ce que j'ai compris
-- Ce que j'ai manipulé
-- Ce que ça m'apporte pour un SOC
-- Points d'attention
+- Ce que j'ai appris
+- Outils manipulés
+- Démarche
+- **Ce que je retiens pour un poste d'analyste SOC**
 
 ---
 
@@ -36,10 +36,10 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 | 3. Windows and AD Fundamentals | 4/4 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Windows_and_AD_Fundamentals/README.md) |
 | 4. Command Line | 3/3 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Command_Line/README.md) |
 | 5. Networking | 7/7 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Networking/README.md) |
-| 6-9. Cryptography, Exploitation, Web Hacking, Offensive Tooling | — | ⏳ | *à venir* |
+| 6-9. Cryptography, Exploitation, Web Hacking, Offensive Tooling | — | ⏳ | *en cours de complétion* |
 | 10. Defensive Security | 4/4 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Defensive_Security/README.md) |
 | 11. Security Solutions | 4/4 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Security_Solutions/README.md) |
-| 12. Defensive Security Tooling | 2/4 | 🚧 | [Voir le module](./TryHackMe/Cyber-security-101/Defensive_Security_Tooling/README.md) |
+| 12. Defensive Security Tooling | 4/4 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Defensive_Security_Tooling/README.md) |
 
 ### Rooms complémentaires (hors parcours)
 
@@ -54,9 +54,10 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 
 ## 🎯 Ce que je cherche
 
-- **Poste** : alternance ou CDD/CDI junior — Analyste SOC
+- **Poste** : alternance ou CDI junior — Analyste SOC L1
 - **Type de structure** : SOC interne, MSSP, ou éditeur
-- **Localisation** : *Lille/Île-de-France/Provence-Alpes-Côte d'Azur*
+- **Localisation** : *(à adapter)*
+- **Disponibilité** : Immédiate (recherche active)
 
 ---
 
@@ -68,6 +69,13 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 
 **Scripting** · Python (appliqué à l'analyse de logs), Bash, PowerShell, JavaScript, PHP
 
-**Sécurité défensive** · SIEM, triage d'alertes, IOC, MITRE ATT&CK (notions), Sigma (notions), analyse de logs, forensique, Incident Response (PICERL), IDS/IPS (Snort), Firewalls, Scan de vulnérabilités (OpenVAS), CyberChef (décodage et extraction), CAPA (analyse statique de malwares)
+**Sécurité défensive** · SIEM, triage d'alertes, IOC, MITRE ATT&CK (notions), Sigma (notions), analyse de logs, forensique, Incident Response (PICERL), IDS/IPS (Snort), Firewalls, Scan de vulnérabilités (OpenVAS)
 
-**Outils** · Git, Visual Studio Code, Docker (notions), CyberChef, CAPA
+**Analyse de malware & outils** · CyberChef (décodage), CAPA (analyse statique), REMnux (oledump, INetSim, Volatility), FlareVM (PEStudio, FLOSS, Process Explorer, Procmon), Git, Visual Studio Code, Docker (notions)
+
+---
+
+## 🔗 Mes profils
+
+- **TryHackMe** : [tryhackme.com/p/Mehdisoc](https://tryhackme.com/p/Mehdisoc)
+- **LinkedIn** : [Mehdi Lemaire](https://www.linkedin.com/in/mehdi-lemaire)
