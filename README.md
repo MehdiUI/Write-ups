@@ -2,7 +2,7 @@
 
 **En reconversion vers la cybersécurité défensive** · 2 ans d'expérience en maintenance et sécurisation de sites web en production · Objectif : **intégrer un SOC en alternance ou en poste junior**.
 
-📍 Profil actif · Membre Premium TryHackMe · Dernière mise à jour : **04/11/2026**
+📍 Profil actif · Membre Premium TryHackMe · Dernière mise à jour : **05/11/2026**
 
 ---
 
@@ -40,6 +40,7 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 | 10. Defensive Security | 4/4 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Defensive_Security/README.md) |
 | 11. Security Solutions | 4/4 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Security_Solutions/README.md) |
 | 12. Defensive Security Tooling | 4/4 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Defensive_Security_Tooling/README.md) |
+| 13. Build Your Cyber Security Career | 3/3 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Build_Your_Cyber_Security_Career/README.md) |
 
 ### Rooms complémentaires (hors parcours)
 
@@ -70,6 +71,8 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 **Scripting** · Python (appliqué à l'analyse de logs), Bash, PowerShell, JavaScript, PHP
 
 **Sécurité défensive** · SIEM, triage d'alertes, IOC, MITRE ATT&CK (notions), Sigma (notions), analyse de logs, forensique, Incident Response (PICERL), IDS/IPS (Snort), Firewalls, Scan de vulnérabilités (OpenVAS)
+
+**Principes & Culture** · Triade CIA, DAD, Zero Trust, Défense en profondeur, Sensibilisation et ROI de la formation.
 
 **Analyse de malware & outils** · CyberChef (décodage), CAPA (analyse statique), REMnux (oledump, INetSim, Volatility), FlareVM (PEStudio, FLOSS, Process Explorer, Procmon), Git, Visual Studio Code, Docker (notions)
 

@@ -4,8 +4,6 @@ Bienvenue sur mon carnet de bord pour le parcours **Cyber Security 101** de TryH
 
 Ce parcours est conçu pour fournir les bases théoriques et pratiques indispensables pour débuter en cybersécurité. Il est particulièrement adapté à mon objectif : devenir **Analyste SOC junior**. Il prépare également à la certification professionnelle **SEC1**.
 
----
-
 ## 📊 Progression globale
 
 | # | Module | Statut | Mes notes |
@@ -21,11 +19,9 @@ Ce parcours est conçu pour fournir les bases théoriques et pratiques indispens
 | 9 | **Offensive Security Tooling** | ⏳ À venir | — |
 | 10 | **Defensive Security** | ✅ Terminé | [Voir le module](./Defensive_Security/README.md) |
 | 11 | **Security Solutions** | ✅ Terminé | [Voir le module](./Security_Solutions/README.md) |
-| 12 | **Defensive Security Tooling** | 🚧 En cours (2/4) | [Voir le module](./Defensive_Security_Tooling/README.md) |
-| 13 | **Build Your Cyber Security Career** | ⏳ À venir | — |
+| 12 | **Defensive Security Tooling** | ✅ Terminé | [Voir le module](./Defensive_Security_Tooling/README.md) |
+| 13 | **Build Your Cyber Security Career** | ✅ Terminé | [Voir le module](./Build_Your_Cyber_Security_Career/README.md) |
 | 14 | **OWASP Top 10 (2025)** | ⏳ À venir | — |
-
----
 
 ## 🎯 Objectif final
 
