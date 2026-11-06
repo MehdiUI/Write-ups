@@ -41,7 +41,7 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 | 11. Security Solutions | 4/4 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Security_Solutions/README.md) |
 | 12. Defensive Security Tooling | 4/4 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Defensive_Security_Tooling/README.md) |
 | 13. Build Your Cyber Security Career | 3/3 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Build_Your_Cyber_Security_Career/README.md) |
-| 14. OWASP Top 10 (2025) | 2/3 | 🚧 | [Voir](./TryHackMe/Cyber-security-101/OWASP_Top_10_2025/README.md) |
+| 14. OWASP Top 10 (2025) | 3/3 | ✅ | [Voir](./TryHackMe/Cyber-security-101/OWASP_Top_10_2025/README.md) |
 
 ### Rooms complémentaires (hors parcours)
 
