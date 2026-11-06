@@ -21,7 +21,7 @@ Ce parcours est conçu pour fournir les bases théoriques et pratiques indispens
 | 11 | **Security Solutions** | ✅ Terminé | [Voir le module](./Security_Solutions/README.md) |
 | 12 | **Defensive Security Tooling** | ✅ Terminé | [Voir le module](./Defensive_Security_Tooling/README.md) |
 | 13 | **Build Your Cyber Security Career** | ✅ Terminé | [Voir le module](./Build_Your_Cyber_Security_Career/README.md) |
-| 14 | **OWASP Top 10 (2025)** | ⏳ À venir | — |
+| 14 | **OWASP Top 10 (2025)** | 🚧 En cours (2/3) | [Voir le module](./OWASP_Top_10_2025/README.md) |
 
 ## 🎯 Objectif final
 
