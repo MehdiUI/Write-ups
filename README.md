@@ -1,8 +1,8 @@
 # 👨‍💻 Mehdi Lemaire — Analyste SOC Junior
 
-**En reconversion vers la cybersécurité défensive** · 2 ans d'expérience en maintenance et de développement de sites web· Objectif : **intégrer un SOC en alternance ou en poste junior**.
+**En reconversion vers la cybersécurité défensive** · 2 ans d'expérience en maintenance et développement de sites web · Objectif : **intégrer un SOC en alternance ou en poste junior**.
 
-📍 Profil actif · Membre Premium TryHackMe · Dernière mise à jour : **05/11/2026**
+📍 Profil actif · Membre Premium TryHackMe · Dernière mise à jour : **07/11/2026**
 
 ---
 
@@ -27,8 +27,9 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 
 ---
 
-## 📊 Progression — TryHackMe (Cyber Security 101)
+## 📊 Progression — TryHackMe
 
+### Parcours Cyber Security 101
 | Module | Rooms | Statut | Notes |
 |---|---|---|---|
 | 1. Start Your Cyber Security Journey | 3/3 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Start_Your_Cyber_Security_Journey/README.md) |
@@ -36,27 +37,26 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 | 3. Windows and AD Fundamentals | 4/4 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Windows_and_AD_Fundamentals/README.md) |
 | 4. Command Line | 3/3 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Command_Line/README.md) |
 | 5. Networking | 7/7 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Networking/README.md) |
-| 6-9. Cryptography, Exploitation, Web Hacking, Offensive Tooling | — | ⏳ | *en cours de complétion* |
+| 6-9. Cryptography, Exploitation, Web Hacking, Offensive Tooling | — | ⏳ | *en cours* |
 | 10. Defensive Security | 4/4 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Defensive_Security/README.md) |
 | 11. Security Solutions | 4/4 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Security_Solutions/README.md) |
 | 12. Defensive Security Tooling | 4/4 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Defensive_Security_Tooling/README.md) |
 | 13. Build Your Cyber Security Career | 3/3 | ✅ | [Voir](./TryHackMe/Cyber-security-101/Build_Your_Cyber_Security_Career/README.md) |
 | 14. OWASP Top 10 (2025) | 3/3 | ✅ | [Voir](./TryHackMe/Cyber-security-101/OWASP_Top_10_2025/README.md) |
 
-### Rooms complémentaires (hors parcours)
-
-| Room | Catégorie | Lien |
-|---|---|---|
-| SOC Role in Blue Team | Blue Team | [Lire](./TryHackMe/Cyber-security-101/soc-role-in-blue-team.md) |
-| Introduction to SIEM | SIEM | [Lire](./TryHackMe/Cyber-security-101/introduction-to-siem.md) |
-| Introduction to EDR | EDR | [Lire](./TryHackMe/Cyber-security-101/introduction-to-edr.md) *(en cours)* |
-| Network Fundamentals (LetsDefend) | Réseau | [Lire](./Letsdefend/network-fundamentals.md) |
+### Parcours SOC Level 1
+| Module | Rooms | Statut | Notes |
+|---|---|---|---|
+| Blue Team Introduction | 1/4 | 🚧 | [Voir](./TryHackMe/SOC-Level-1/Blue_Team_Introduction/README.md) |
+| Cyber Defence Frameworks | — | ⏳ | *à venir* |
+| Cyber Threat Intelligence | — | ⏳ | *à venir* |
+| Network Security & Traffic Analysis | — | ⏳ | *à venir* |
 
 ---
 
 ## 🎯 Ce que je cherche
 
-- **Poste** : alternance ou CDI junior — Analyste SOC L1
+- **Poste** : alternance bac +3 d'un an en ou CDI junior — Analyste SOC L1
 - **Type de structure** : SOC interne, MSSP, ou éditeur
 - **Localisation** : *(à adapter)*
 - **Disponibilité** : Immédiate (recherche active)
@@ -71,7 +71,7 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 
 **Scripting** · Python (appliqué à l'analyse de logs), Bash, PowerShell, JavaScript, PHP
 
-**Sécurité défensive** · SIEM, triage d'alertes, IOC, MITRE ATT&CK (notions), Sigma (notions), analyse de logs, forensique, Incident Response (PICERL), IDS/IPS (Snort), Firewalls, Scan de vulnérabilités (OpenVAS)
+**Sécurité défensive** · SIEM, triage d'alertes, IOC, MITRE ATT&CK (notions), Sigma (notions), analyse de logs, forensique, Incident Response (PICERL), IDS/IPS (Snort), Firewalls, Scan de vulnérabilités (OpenVAS), OWASP Top 10 (notions).
 
 **Principes & Culture** · Triade CIA, DAD, Zero Trust, Défense en profondeur, Sensibilisation et ROI de la formation.
 
