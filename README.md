@@ -47,12 +47,10 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 ### Parcours SOC Level 1
 | Module | Rooms | Statut | Notes |
 |---|---|---|---|
-| Blue Team Introduction | 1/4 | 🚧 | [Voir](./TryHackMe/SOC-Level-1/Blue_Team_Introduction/README.md) |
+| Blue Team Introduction | 2/4 | 🚧 | [Voir](./TryHackMe/SOC-Level-1/Blue_Team_Introduction/README.md) |
 | Cyber Defence Frameworks | — | ⏳ | *à venir* |
 | Cyber Threat Intelligence | — | ⏳ | *à venir* |
 | Network Security & Traffic Analysis | — | ⏳ | *à venir* |
-
----
 
 ## 🎯 Ce que je cherche
 
