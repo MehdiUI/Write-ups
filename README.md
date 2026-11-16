@@ -22,7 +22,7 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 | Projet | Techno | Description |
 |---|---|---|
 | [**SOC Brute-Force Detector**](https://github.com/Mehdisoc/soc-bruteforce-detector) | Python | Script de détection de brute force SSH dans les `auth.log`. Parsing regex, agrégation par IP, triage par sévérité, ground truth de test. |
-| [**Lab SIEM — Detection & Triage (Wazuh)**](https://github.com/Mehdisoc/wazuh-detection-triage-lab) | Wazuh · Ubuntu Server · VirtualBox | Laboratoire SIEM complet déployé sur Ubuntu Server : manager + agent Wazuh, génération et collecte de logs, création de règles de détection personnalisées, simulation d'attaques (brute force SSH, FIM, reconnaissance), triage d'alertes dans le dashboard, et rédaction de rapports d'investigation. |
+| [**Lab SIEM — Detection & Triage (Wazuh)**](https://github.com/MehdiUI/wazuh-soc-lab) | Wazuh · Ubuntu Server · VirtualBox | Laboratoire SIEM complet déployé sur Ubuntu Server : manager + agent Wazuh, génération et collecte de logs, création de règles de détection personnalisées, simulation d'attaques (brute force SSH, FIM, reconnaissance), triage d'alertes dans le dashboard, et rédaction de rapports d'investigation. |
 
 *D'autres projets à venir : pipeline d'enrichissement d'alertes (VirusTotal, AbuseIPDB), automatisation SOAR avec n8n, lab EDR (Sysmon + Velociraptor).*
 
