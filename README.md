@@ -2,7 +2,7 @@
 
 **En reconversion vers la cybersécurité défensive** · 2 ans d'expérience en maintenance et développement de sites web · Objectif : **intégrer un SOC en alternance ou en poste junior**.
 
-📍 Profil actif · Membre Premium TryHackMe · Dernière mise à jour : **16/11/2026**
+📍 Profil actif · Membre Premium TryHackMe · Dernière mise à jour : **26/11/2026**
 
 ---
 
@@ -34,19 +34,21 @@ Ce dépôt n'est pas une collection de solutions : c'est une **preuve de méthod
 
 L'ensemble du parcours **Cyber Security 101** (modules Blue Team) est terminé. Les write-ups sont disponibles dans le dossier [`./TryHackMe/Cyber-security-101/`](./TryHackMe/Cyber-security-101/).
 
+> **Note** : la room **IDS Fundamentals** du module *Network Security Monitoring* (SOC L1) est documentée dans [`Cyber-security-101/Security_Solutions/ids-fundamentals.md`](./TryHackMe/Cyber-security-101/Security_Solutions/ids-fundamentals.md).
+
 ---
 
 ### 🚧 Parcours SOC Level 1 — En cours
 
 | Module | Rooms | Statut | Write-ups |
 |---|---|---|---|
-| **Blue Team Introduction** | 4/4 | ✅ | [Voir](./TryHackMe/SOC-Level-1/Blue_Team_Introduction/README.md) |
-| **SOC Team Internals** | 5/5 | ✅ | [Voir](./TryHackMe/SOC-Level-1/SOC_Team_Internals/README.md) |
-| **Core SOC Solutions** | 5/5 | ✅ | [Voir](./TryHackMe/SOC-Level-1/Core_SOC_Solutions/README.md) |
-| **Cyber Defence Frameworks** | 6/6 | ✅ | [Voir](./TryHackMe/SOC-Level-1/Cyber_Defence_Frameworks/README.md) |
-| **Phishing Analysis** | 6/6 | ✅ | [Voir](./TryHackMe/SOC-Level-1/Phishing_Analysis/README.md) |
-| Network Traffic Analysis | — | ⏳ | *à venir* |
-| Network Security Monitoring | — | ⏳ | *à venir* |
+| **Blue Team Introduction** | 4/4 | ✅ | [Voir](./TryHackMe/SOC-L1/Blue-Team-Introduction/README.md) |
+| **SOC Team Internals** | 5/5 | ✅ | [Voir](./TryHackMe/SOC-L1/SOC-Team-Internals/README.md) |
+| **Core SOC Solutions** | 5/5 | ✅ | [Voir](./TryHackMe/SOC-L1/Core_SOC_Solutions/README.md) |
+| **Cyber Defence Frameworks** | 6/6 | ✅ | [Voir](./TryHackMe/SOC-L1/Cyber-Defence-Frameworks/README.md) |
+| **Phishing Analysis** | 6/6 | ✅ | [Voir](./TryHackMe/SOC-L1/Phishing-Analysis/README.md) |
+| **Network Traffic Analysis** | 5/5 | ✅ | [Voir](./TryHackMe/SOC-L1/Network%20Traffic%20Analysis/) |
+| **Network Security Monitoring** | 5/6 | 🚧 | [Voir](./TryHackMe/SOC-L1/Network-Security-Monitoring/) |
 | Web Security Monitoring | — | ⏳ | *à venir* |
 | Windows Security Monitoring | — | ⏳ | *à venir* |
 | Linux Security Monitoring | — | ⏳ | *à venir* |
@@ -60,48 +62,67 @@ L'ensemble du parcours **Cyber Security 101** (modules Blue Team) est terminé. 
 ### Blue Team Introduction (4/4 ✅)
 | Room | Write-up |
 |---|---|
-| Junior Security Analyst Intro | [Voir](./TryHackMe/SOC-Level-1/Blue_Team_Introduction/junior-security-analyst-intro.md) |
-| SOC Role in Blue Team | [Voir](./TryHackMe/SOC-Level-1/Blue_Team_Introduction/soc-role-in-blue-team.md) |
-| Humans as Attack Vectors | [Voir](./TryHackMe/SOC-Level-1/Blue_Team_Introduction/humans-as-attack-vectors.md) |
-| Systems as Attack Vectors | [Voir](./TryHackMe/SOC-Level-1/Blue_Team_Introduction/systems-as-attack-vectors.md) |
+| Junior Security Analyst Intro | [Voir](./TryHackMe/SOC-L1/Blue-Team-Introduction/junior-security-analyst-intro.md) |
+| SOC Role in Blue Team | [Voir](./TryHackMe/SOC-L1/Blue-Team-Introduction/soc-role-in-blue-team.md) |
+| Humans as Attack Vectors | [Voir](./TryHackMe/SOC-L1/Blue-Team-Introduction/humans-as-attack-vectors.md) |
+| Systems as Attack Vectors | [Voir](./TryHackMe/SOC-L1/Blue-Team-Introduction/systems-as-attack-vectors.md) |
 
 ### SOC Team Internals (5/5 ✅)
 | Room | Write-up |
 |---|---|
-| SOC L1 Alert Triage | [Voir](./TryHackMe/SOC-Level-1/SOC_Team_Internals/soc-l1-alert-triage.md) |
-| SOC L1 Alert Reporting | [Voir](./TryHackMe/SOC-Level-1/SOC_Team_Internals/soc-l1-alert-reporting.md) |
-| SOC Workbooks and Lookups | [Voir](./TryHackMe/SOC-Level-1/SOC_Team_Internals/soc-workbooks-and-lookups.md) |
-| SOC Metrics and Objectives | [Voir](./TryHackMe/SOC-Level-1/SOC_Team_Internals/soc-metrics-and-objectives.md) |
-| SOC Simulator: Phishing | [Voir](./TryHackMe/SOC-Level-1/SOC_Team_Internals/soc-simulator-phishing.md) |
+| SOC L1 Alert Triage | [Voir](./TryHackMe/SOC-L1/SOC-Team-Internals/soc-l1-alert-triage.md) |
+| SOC L1 Alert Reporting | [Voir](./TryHackMe/SOC-L1/SOC-Team-Internals/soc-l1-alert-reporting.md) |
+| SOC Workbooks and Lookups | [Voir](./TryHackMe/SOC-L1/SOC-Team-Internals/soc-workbooks-and-lookups.md) |
+| SOC Metrics and Objectives | [Voir](./TryHackMe/SOC-L1/SOC-Team-Internals/soc-metrics-and-objectives.md) |
+| SOC Simulator: Phishing | [Voir](./TryHackMe/SOC-L1/SOC-Team-Internals/soc-simulator-phishing.md) |
 
 ### Core SOC Solutions (5/5 ✅)
 | Room | Write-up |
 |---|---|
-| Intro to EDR | [Voir](./TryHackMe/SOC-Level-1/Core_SOC_Solutions/intro-to-edr.md) |
-| Intro to SIEM | [Voir](./TryHackMe/SOC-Level-1/Core_SOC_Solutions/intro-to-siem.md) |
-| Splunk: The Basics | [Voir](./TryHackMe/SOC-Level-1/Core_SOC_Solutions/splunk-basics.md) |
-| Elastic Stack: The Basics | [Voir](./TryHackMe/SOC-Level-1/Core_SOC_Solutions/elastic-stack-basics.md) |
-| Intro to SOAR | [Voir](./TryHackMe/SOC-Level-1/Core_SOC_Solutions/intro-to-soar.md) |
+| Intro to EDR | [Voir](./TryHackMe/SOC-L1/Core_SOC_Solutions/intro-to-edr.md) |
+| Intro to SIEM | [Voir](./TryHackMe/SOC-L1/Core_SOC_Solutions/intro-to-siem.md) |
+| Splunk: The Basics | [Voir](./TryHackMe/SOC-L1/Core_SOC_Solutions/splunk-basics.md) |
+| Elastic Stack: The Basics | [Voir](./TryHackMe/SOC-L1/Core_SOC_Solutions/elastic-stack-basics.md) |
+| Intro to SOAR | [Voir](./TryHackMe/SOC-L1/Core_SOC_Solutions/intro-to-soar.md) |
 
 ### Cyber Defence Frameworks (6/6 ✅)
 | Room | Write-up |
 |---|---|
-| Pyramid Of Pain | [Voir](./TryHackMe/SOC-Level-1/Cyber_Defence_Frameworks/pyramid-of-pain.md) |
-| Cyber Kill Chain | [Voir](./TryHackMe/SOC-Level-1/Cyber_Defence_Frameworks/cyber-kill-chain.md) |
-| Unified Kill Chain | [Voir](./TryHackMe/SOC-Level-1/Cyber_Defence_Frameworks/unified-kill-chain.md) |
-| MITRE | [Voir](./TryHackMe/SOC-Level-1/Cyber_Defence_Frameworks/mitre.md) |
-| Summit | [Voir](./TryHackMe/SOC-Level-1/Cyber_Defence_Frameworks/summit.md) |
-| Eviction | [Voir](./TryHackMe/SOC-Level-1/Cyber_Defence_Frameworks/eviction.md) |
+| Pyramid Of Pain | [Voir](./TryHackMe/SOC-L1/Cyber-Defence-Frameworks/pyramid-of-pain.md) |
+| Cyber Kill Chain | [Voir](./TryHackMe/SOC-L1/Cyber-Defence-Frameworks/cyber-kill-chain.md) |
+| Unified Kill Chain | [Voir](./TryHackMe/SOC-L1/Cyber-Defence-Frameworks/unified-kill-chain.md) |
+| MITRE | [Voir](./TryHackMe/SOC-L1/Cyber-Defence-Frameworks/mitre.md) |
+| Summit | [Voir](./TryHackMe/SOC-L1/Cyber-Defence-Frameworks/summit.md) |
+| Eviction | [Voir](./TryHackMe/SOC-L1/Cyber-Defence-Frameworks/eviction.md) |
 
 ### Phishing Analysis (6/6 ✅)
 | Room | Write-up |
 |---|---|
-| Phishing Analysis Fundamentals | [Voir](./TryHackMe/SOC-Level-1/Phishing_Analysis/phishing-analysis-fundamentals.md) |
-| Phishing Emails in Action | [Voir](./TryHackMe/SOC-Level-1/Phishing_Analysis/phishing-emails-in-action.md) |
-| Phishing Analysis Tools | [Voir](./TryHackMe/SOC-Level-1/Phishing_Analysis/phishing-analysis-tools.md) |
-| Phishing Prevention | [Voir](./TryHackMe/SOC-Level-1/Phishing_Analysis/phishing-prevention.md) |
-| The Greenholt Phish | [Voir](./TryHackMe/SOC-Level-1/Phishing_Analysis/the-greenholt-phish.md) |
-| Snapped Phish-ing Line | [Voir](./TryHackMe/SOC-Level-1/Phishing_Analysis/snapped-phish-ing-line.md) |
+| Phishing Analysis Fundamentals | [Voir](./TryHackMe/SOC-L1/Phishing-Analysis/phishing-analysis-fundamentals.md) |
+| Phishing Emails in Action | [Voir](./TryHackMe/SOC-L1/Phishing-Analysis/phishing-emails-in-action.md) |
+| Phishing Analysis Tools | [Voir](./TryHackMe/SOC-L1/Phishing-Analysis/phishing-analysis-tools.md) |
+| Phishing Prevention | [Voir](./TryHackMe/SOC-L1/Phishing-Analysis/phishing-prevention.md) |
+| The Greenholt Phish | [Voir](./TryHackMe/SOC-L1/Phishing-Analysis/the-greenholt-phish.md) |
+| Snapped Phish-ing Line | [Voir](./TryHackMe/SOC-L1/Phishing-Analysis/snapped-phish-ing-line.md) |
+
+### Network Traffic Analysis (5/5 ✅)
+| Room | Write-up |
+|---|---|
+| Network Traffic Basics | [Voir](./TryHackMe/SOC-L1/Network%20Traffic%20Analysis/Network%20Traffic%20Basics.md) |
+| NetworkMiner | [Voir](./TryHackMe/SOC-L1/Network%20Traffic%20Analysis/networkminer.md) |
+| Wireshark: The Basics | [Voir](./TryHackMe/SOC-L1/Network%20Traffic%20Analysis/wireshark-basics.md) |
+| Wireshark: Packet Operations | [Voir](./TryHackMe/SOC-L1/Network%20Traffic%20Analysis/wiresharkpacketoperations.md) |
+| Wireshark: Traffic Analysis | [Voir](./TryHackMe/SOC-L1/Network%20Traffic%20Analysis/wiresharktrafficanalysis.md) |
+
+### Network Security Monitoring (5/6 🚧)
+| Room | Write-up |
+|---|---|
+| Network Security Essentials | [Voir](./TryHackMe/SOC-L1/Network-Security-Monitoring/networksecurityessentials.md) |
+| Network Discovery Detection | [Voir](./TryHackMe/SOC-L1/Network-Security-Monitoring/networkdiscoverydetection.md) |
+| Data Exfiltration Detection | [Voir](./TryHackMe/SOC-L1/Network-Security-Monitoring/data-exfiltration-detection.md) |
+| IDS Fundamentals | [Voir](./TryHackMe/Cyber-security-101/Security_Solutions/ids-fundamentals.md) |
+| MITM Detection | [Voir](./TryHackMe/SOC-L1/Network-Security-Monitoring/mitm-detection.md) |
+| Room restante (6/6) | *à venir* |
 
 ---
 
@@ -118,7 +139,7 @@ L'ensemble du parcours **Cyber Security 101** (modules Blue Team) est terminé. 
 
 **Systèmes** · Windows (CMD, PowerShell, NTFS, UAC, Event Viewer, Registre, Defender, Active Directory) · Linux (Bash, Zsh, permissions, processus, services, logs, cron, Ubuntu Server)
 
-**Réseau** · TCP/IP, DNS, HTTP, SMTP, modèle OSI, Wireshark, adressage IPv4/IPv6, subnetting, DHCP, ARP, Nmap
+**Réseau** · TCP/IP, DNS, HTTP, SMTP, modèle OSI, Wireshark, adressage IPv4/IPv6, subnetting, DHCP, ARP, Nmap, NetworkMiner, analyse de trafic (NTA)
 
 **Scripting** · Python (appliqué à l'analyse de logs), Bash, PowerShell, JavaScript, PHP
 
